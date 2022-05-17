@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+name: Produce Pandoc website
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.0.2
+
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v1.1.1
+
+      - name: Prepare repo
+        run: mkdir dist
+
+      - name: Create file list
+        id: files_list
+        run: echo "::set-output name=files::$(printf '"%s"\n' exam/*.md)"
+
+      # pandoc exam/exam.md --from=markdown --to=html --output=dist/index.html --toc --template=elegant_bootstrap_menu.html --data-dir=.pandoc
+      - name: Use Pandoc
+        uses: docker://pandoc/minimal:2.18.0.0
+        with:
+          args: >-
+            --data-dir=.pandoc
+            --template=elegant_bootstrap_menu.html
+            --toc
+            --from=markdown
+            --to=html
+            --output=dist/index.html
+            ${{ steps.files_list.outputs.files }}
+
+      - uses: actions/upload-artifact@v3.0.0
+        with:
+          name: dist
+          path: dist
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+          token: ${{ secrets.GH_TOKEN }}

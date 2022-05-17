@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cs-teaching-exam-template
+Upstream-Contact: Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+Source: https://github.com/Daniele-Tentoni/cs-teaching-exam-template
+
+Files: .github/renovate.json
+Copyright: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+License: CC0-1.0
