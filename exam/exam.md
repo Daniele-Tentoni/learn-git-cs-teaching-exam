@@ -85,6 +85,8 @@ Per l'uso di questo materiale didattico in un istituto tecnico non ad indirizzo 
 Spiegare brevemente i contenuti. Se si tratta di contenuti banalmente chiari per un informatico, elencarli semplicemente. Se ci sono contenuti particolari o specifici illustrarli brevemente.
 -->
 
+Si vuole introdurre gli studenti all'uso dello strumento Git per versionare il loro codice. Si vuole aiutare a comprendere loro il concetto di repository, branch, commit e staging area, visionare la storia dello stesso e le differenze tra i vari commit e l'attuale contenuto dei files nel repository con la loro controparte attualmente versionata dal repository.
+
 ## Traguardi e Obiettivi
 
 <!--
