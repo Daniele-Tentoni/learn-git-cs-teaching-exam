@@ -42,6 +42,7 @@ Può essere---adattata---rivolta a studenti di diverse età e indirizzi?
 -->
 
 <!-- TODO: Controllare i documenti ministeriali e/o alla Proposta CINI -->
+
 L'attività è rivolta specialmente al triennio di un istituto tecnico con indirizzo informatico, da svolgere durante le ore di Informatica o discipline annesse (Sistemi e Reti o Gestione di Progetto).
 
 In generale, potendo tramite Git tracciare qualunque prodotto in grado di essere memorizzato su supporto informatico, l'attività può essere riadattata per poter insegnare Git ad un qualunque pubblico di studenti delle scuole superiori a cui si vuole proporre uno strumento di memorizzazione o versionamento alternativo ai classici storage fisici (pennette usb, supporti ottici ...) o cloud (Onedrive, Google Drive ...).
@@ -67,6 +68,22 @@ Per tali motivi, penso che proporre agli studenti quelle che secondo me sono le 
 Perché questa proposta è innovativa? Cosa è già presente su questo tema nella ricerca in Didattica dell'Informatica o nelle risorse disponibili online?
 -->
 
+Moltissime attività disponibili in rete che ho cercato non coprono gli stessi argomenti di questa. L'insieme delle competenze che vengono proposte nel seguente materiale è la scrematura di tutte quelle che io abbia mai usato nel mio ambito lavorativo fino adesso (questo è il 5 anno di lavoro in un'azienda software cesenate di una ventina di dipendenti) e che penso sia assolutamente irrinunciabili per una persona neo-diplomata che voglia affacciarsi sul mondo del lavoro in ambito informatico.
+
+Alcune delle risorse disponibili online attualmente sono:
+
+[https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
+: Ebook scaricabile dal sito ufficiale del progetto Git. Mette a disposizione quindi tutto lo scibile di Git, quindi potrebbe far desistere chi invece cerca un approccio più pragmatico. Resta comunque la scelta più valida possibile per chi volesse approfondire l'argomento autonomamente a casa;
+
+[https://learngitbranching.js.org/](https://learngitbranching.js.org/)
+: Gioco gratuito per imparare nei primi livelli i comandi base e via via avanzando nel gioco concetti più complicati. Possibile allenamento in vista di interrogazioni e compiti in classe per gli studenti;
+
+[https://www.atlassian.com/git](https://www.atlassian.com/git)
+: Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket;
+
+[https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+: Elenco dei principali comandi di Git curata dai sopracitati collaboratori di Atlassian.
+
 ## Prerequisiti
 
 <!--
@@ -74,10 +91,12 @@ Elencare i contenuti che si suppone siano già stati svolti e appresi dagli stud
 -->
 
 Gli studenti devono già essere in possesso delle seguenti conoscenze:
+
 1. Sapere cosa sia un sistema operativo e come vengono memorizzati i files
-2. Sapere cosa sia un'interfaccia a riga di comando e come dargli dei comandi
+2. Sapere cosa sia un'interfaccia a riga di comando e come eseguire comandi e programmi
 
 Per l'uso di questo materiale didattico in un istituto tecnico non ad indirizzo informatico sono superflue le seguenti conoscenze (richiede il riadattamento di una parte di questo materiale didattico):
+
 1. Sapere cosa sia un algoritmo, un programma, una funzione, una istruzione, un dato
 2. Avere padronanza dei construtti semplici di un linguaggio a scelta del professore (in questo materiale didattico viene scelto il linguaggio Python)
 
@@ -94,6 +113,36 @@ Si vuole introdurre gli studenti all'uso dello strumento Git per versionare il l
 <!--
 Quali traguardi e obiettivi di apprendimento si vuole raggiungere con le attività proposte?
 -->
+
+Al termine delle lezioni nell'area `git`, lo studente deve aver appreso i seguenti concetti:
+
+- repository, locale o remoto
+- branch, principale, secondario
+- commit, con o senza messaggio
+- storia del repository
+- staging area
+
+Deve essere entrato in possesso delle seguenti competenze:
+
+- creare un repository locale
+- visualizzare lo stato attuale del repository
+- creare un branch a partire dal principale e muoversi tra quelli già presenti
+- aggiungere/rimuovere files o parte di essi alla staging area ed eseguire commit
+- visualizzare la storia del repository e muoversi all'interno di essa
+- tornare indietro nella storia nel caso sia stato fatto un errore
+
+Al termine delle lezioni nell'area `github` devono aver appreso i seguenti concetti:
+
+- repository centralizzato
+- issue come richiesta di chiarimenti, segnalazione di un problema o suggerimento di una soluzione
+- pull request come offerta di aggiunta di una nuova funzionalità e di una soluzione ad un problema riscontrato
+
+Deve essere entrato in possesso delle seguenti competenze:
+
+- creare un repository sul proprio account
+- creare branch
+- aprire una issue, ispezionarne il contenuto, aggiungere meta-informazioni, rispondere ad issue aperte e chiuderle quando necessario
+- aprire una pull request, ispezionarne il contenuto, aggiungere meta-informazioni, collegarne le issue ad essa relative e partecipare al loro ciclo di sviluppo con revisioni del codice, apporto di modifiche, commenti e chiusura
 
 ### Collegamento con i documenti ministeriali/proposte
 
@@ -125,6 +174,8 @@ Massima libertà di introdurre altre metodologie non spiegate a lezione (es. EAS
 
 Se si parla di didattica della programmazione, fare anche riferimento ai relativi concetti (macchina concettuale, misconcezioni, visualizzazione, program comprehension) spiegati a lezione.
 -->
+
+Vengono proposte due aree le quali possono essere suddivise in una o più lezioni frontali e due attività di laboratorio da proporre agli studenti che dovranno eseguire esercizi in gruppo.
 
 ## Tempi
 
@@ -171,6 +222,8 @@ Citare le fonti utilizzate (si consiglia ad esempio bibtex o biblatex)
 -->
 
 # Licenza del documento
+
+Questo documento viene fornito con licenza Creative Commons 1.0 Universal, di cui una copia è disponibile [allegata](/LICENSES/CC0-1.0.txt) al repository dove è contenuto questo file.
 
 <!--
 Specificare la licenza del documento.
