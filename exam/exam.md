@@ -1,13 +1,15 @@
 <!--
 SPDX-FileCopyrightText: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
 
-SPDX-License-Identifier: GPL-3.0-only
+SPDX-License-Identifier: CC0-1.0
 -->
 
 ---
+
 title: Lezione Tool Git
 author: Daniele Tentoni
 date: 17/05/2022
+
 ---
 
 Esame di Didattica dell'Informatica, A.A. 2021/2022
