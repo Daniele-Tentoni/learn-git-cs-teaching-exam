@@ -50,24 +50,12 @@ SPDX-License-Identifier: GPL-3.0-only
   
     <script src="https://cdn.rawgit.com/diversen/pandoc-bootstrap-adaptive-template/959c3622/jquery.sticky-kit.js"></script>
     <meta name="generator" content="pandoc" />
-  <meta name="author" content="Daniele Tentoni" />
-  <title>Lezione Tool Git</title>
+  <title>exam</title>
   <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
 
     
-    <div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <span class="doc-title">Lezione Tool Git</span>
-        <ul class="nav pull-right doc-info">
-                    <li><p class="navbar-text">Daniele Tentoni</p></li>
-                              <li><p class="navbar-text">17/05/2022</p></li>
-                  </ul>
-      </div>
-    </div>
-  </div>
     <div class="container">
     <div class="row">
             <div id="TOC" class="span3">
@@ -118,8 +106,12 @@ SPDX-License-Identifier: GPL-3.0-only
             <!--
             SPDX-FileCopyrightText: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
 
-            SPDX-License-Identifier: GPL-3.0-only
+            SPDX-License-Identifier: CC0-1.0
             -->
+            <hr />
+            <p>title: Lezione Tool Git author: Daniele Tentoni date:
+            17/05/2022</p>
+            <hr />
             <p>Esame di Didattica dell’Informatica, A.A. 2021/2022</p>
             <!--
             # Changelog (se necessario)
@@ -193,23 +185,73 @@ SPDX-License-Identifier: GPL-3.0-only
             <!--
             Perché questa proposta è innovativa? Cosa è già presente su questo tema nella ricerca in Didattica dell'Informatica o nelle risorse disponibili online?
             -->
+            <p>Moltissime attività disponibili in rete che ho cercato
+            non coprono gli stessi argomenti di questa. L’insieme delle
+            competenze che vengono proposte nel seguente materiale è la
+            scrematura di tutte quelle che io abbia mai usato nel mio
+            ambito lavorativo fino adesso (questo è il 5 anno di lavoro
+            in un’azienda software cesenate di una ventina di
+            dipendenti) e che penso sia assolutamente irrinunciabili per
+            una persona neo-diplomata che voglia affacciarsi sul mondo
+            del lavoro in ambito informatico.</p>
+            <p>Alcune delle risorse disponibili online attualmente
+            sono:</p>
+            <dl>
+            <dt><a
+            href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a></dt>
+            <dd>
+            Ebook scaricabile dal sito ufficiale del progetto Git. Mette
+            a disposizione quindi tutto lo scibile di Git, quindi
+            potrebbe far desistere chi invece cerca un approccio più
+            pragmatico. Resta comunque la scelta più valida possibile
+            per chi volesse approfondire l’argomento autonomamente a
+            casa;
+            </dd>
+            <dt><a
+            href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></dt>
+            <dd>
+            Gioco gratuito per imparare nei primi livelli i comandi base
+            e via via avanzando nel gioco concetti più complicati.
+            Possibile allenamento in vista di interrogazioni e compiti
+            in classe per gli studenti;
+            </dd>
+            <dt><a
+            href="https://www.atlassian.com/git">https://www.atlassian.com/git</a></dt>
+            <dd>
+            Guida a Git curata da Atlassian, uno dei principali attori
+            in gioco in tema di Sistemi di Versionamento del Codice
+            grazie alla loro piattaforma BitBucket;
+            </dd>
+            <dt><a
+            href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet</a></dt>
+            <dd>
+            Elenco dei principali comandi di Git curata dai sopracitati
+            collaboratori di Atlassian.
+            </dd>
+            </dl>
             <h2 id="prerequisiti">Prerequisiti</h2>
             <!--
             Elencare i contenuti che si suppone siano già stati svolti e appresi dagli studenti
             -->
             <p>Gli studenti devono già essere in possesso delle seguenti
-            conoscenze: 1. Sapere cosa sia un sistema operativo e come
-            vengono memorizzati i files 2. Sapere cosa sia
-            un’interfaccia a riga di comando e come dargli dei
-            comandi</p>
+            conoscenze:</p>
+            <ol type="1">
+            <li>Sapere cosa sia un sistema operativo e come vengono
+            memorizzati i files</li>
+            <li>Sapere cosa sia un’interfaccia a riga di comando e come
+            eseguire comandi e programmi</li>
+            </ol>
             <p>Per l’uso di questo materiale didattico in un istituto
             tecnico non ad indirizzo informatico sono superflue le
             seguenti conoscenze (richiede il riadattamento di una parte
-            di questo materiale didattico): 1. Sapere cosa sia un
-            algoritmo, un programma, una funzione, una istruzione, un
-            dato 2. Avere padronanza dei construtti semplici di un
+            di questo materiale didattico):</p>
+            <ol type="1">
+            <li>Sapere cosa sia un algoritmo, un programma, una
+            funzione, una istruzione, un dato</li>
+            <li>Avere padronanza dei construtti semplici di un
             linguaggio a scelta del professore (in questo materiale
-            didattico viene scelto il linguaggio Python)</p>
+            didattico viene scelto il linguaggio Python)</li>
+            </ol>
             <h2 id="contenuti">Contenuti</h2>
             <!--
             Spiegare brevemente i contenuti. Se si tratta di contenuti banalmente chiari per un informatico, elencarli semplicemente. Se ci sono contenuti particolari o specifici illustrarli brevemente.
@@ -225,6 +267,53 @@ SPDX-License-Identifier: GPL-3.0-only
             <!--
             Quali traguardi e obiettivi di apprendimento si vuole raggiungere con le attività proposte?
             -->
+            <p>Al termine delle lezioni nell’area <code>git</code>, lo
+            studente deve aver appreso i seguenti concetti:</p>
+            <ul>
+            <li>repository, locale o remoto</li>
+            <li>branch, principale, secondario</li>
+            <li>commit, con o senza messaggio</li>
+            <li>storia del repository</li>
+            <li>staging area</li>
+            </ul>
+            <p>Deve essere entrato in possesso delle seguenti
+            competenze:</p>
+            <ul>
+            <li>creare un repository locale</li>
+            <li>visualizzare lo stato attuale del repository</li>
+            <li>creare un branch a partire dal principale e muoversi tra
+            quelli già presenti</li>
+            <li>aggiungere/rimuovere files o parte di essi alla staging
+            area ed eseguire commit</li>
+            <li>visualizzare la storia del repository e muoversi
+            all’interno di essa</li>
+            <li>tornare indietro nella storia nel caso sia stato fatto
+            un errore</li>
+            </ul>
+            <p>Al termine delle lezioni nell’area <code>github</code>
+            devono aver appreso i seguenti concetti:</p>
+            <ul>
+            <li>repository centralizzato</li>
+            <li>issue come richiesta di chiarimenti, segnalazione di un
+            problema o suggerimento di una soluzione</li>
+            <li>pull request come offerta di aggiunta di una nuova
+            funzionalità e di una soluzione ad un problema
+            riscontrato</li>
+            </ul>
+            <p>Deve essere entrato in possesso delle seguenti
+            competenze:</p>
+            <ul>
+            <li>creare un repository sul proprio account</li>
+            <li>creare branch</li>
+            <li>aprire una issue, ispezionarne il contenuto, aggiungere
+            meta-informazioni, rispondere ad issue aperte e chiuderle
+            quando necessario</li>
+            <li>aprire una pull request, ispezionarne il contenuto,
+            aggiungere meta-informazioni, collegarne le issue ad essa
+            relative e partecipare al loro ciclo di sviluppo con
+            revisioni del codice, apporto di modifiche, commenti e
+            chiusura</li>
+            </ul>
             <h3
             id="collegamento-con-i-documenti-ministerialiproposte">Collegamento
             con i documenti ministeriali/proposte</h3>
@@ -253,6 +342,10 @@ SPDX-License-Identifier: GPL-3.0-only
 
             Se si parla di didattica della programmazione, fare anche riferimento ai relativi concetti (macchina concettuale, misconcezioni, visualizzazione, program comprehension) spiegati a lezione.
             -->
+            <p>Vengono proposte due aree le quali possono essere
+            suddivise in una o più lezioni frontali e due attività di
+            laboratorio da proporre agli studenti che dovranno eseguire
+            esercizi in gruppo.</p>
             <h2 id="tempi">Tempi</h2>
             <!--
             Un'idea generale e indicativa dei tempi richiesti
@@ -306,6 +399,10 @@ SPDX-License-Identifier: GPL-3.0-only
             Citare le fonti utilizzate (si consiglia ad esempio bibtex o biblatex)
             -->
             <h1 id="licenza-del-documento">Licenza del documento</h1>
+            <p>Questo documento viene fornito con licenza Creative
+            Commons 1.0 Universal, di cui una copia è disponibile <a
+            href="/LICENSES/CC0-1.0.txt">allegata</a> al repository dove
+            è contenuto questo file.</p>
             <!--
             Specificare la licenza del documento.
 
