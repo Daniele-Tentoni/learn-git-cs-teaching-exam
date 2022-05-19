@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+SPDX-FileCopyrightText: 2022 Michael Lodi <michael.lodi@unibo.it>
 
 SPDX-License-Identifier: CC0-1.0
 -->
