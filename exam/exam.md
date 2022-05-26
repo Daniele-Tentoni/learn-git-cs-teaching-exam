@@ -215,6 +215,30 @@ Deve contenere almeno:
     * Suggerimenti su come valutare il raggiungimento degli obiettivi di apprendimento da voi individuati (soprattutto valutazione formativa)
 -->
 
+Cosa sono:
+* un hunk
+    * aggiungere un hunk
+    * rimuovere un hunk
+    * (esercizio) aggiungere singoli hunk da vari files
+* un commit
+    * creare un commit
+    * (avanzato, insegnare con cura) fare ammenda dei propri commit
+* un branch
+    * creare un branch
+    * cambiare branch
+    * mergiare branch
+    * eliminare branch
+* un tag (importante perche' creare un tag)
+    * creare un tag, anche annotato
+    * eliminare un tag
+* avanzato: git flow e buone prassi
+
+Dopo l'installazione bisogna configurare git usando i comandi:
+```
+git config --global user.name
+git config --global user.email
+```
+
 # Bibliografia
 
 <!--
@@ -234,3 +258,103 @@ colleghi o insegnanti.
 
 NB: non basta specificare una licenza, bisogna anche rispettarla (es. non includere testi o immagini con licenze non compatibili con quella scelta)
 -->
+
+## Final Result
+
+Your repository story has to look like this:
+
+Il comando `git init` inizializza il repository.
+
+Il comando `git status` mostra lo stato attuale del repository.
+
+Il comando `git log` mostra la storia attuale del repository.
+
+Il comando `git add` aggiunge dati alla staging area.
+
+Il comando `git commit` scrive le modifiche aggiunte alla staging area alla storia del repository.
+
+I comandi `git push` e `git pull` servono solo per repository remoti.
+
+Quindi a seguito dei comandi:
+```
+git init
+echo "Esercizio" >> README
+```
+Lo stato del repository sara' il seguente:
+
+```mermaid
+sequenceDiagram
+    Untracked
+    Note over Untracked: README
+```
+
+Eseguendo il comando `git add`:
+
+```mermaid
+sequenceDiagram
+    Untracked->Staged
+    Note over Staged: README
+```
+
+Eseguendo il comando `git commit`
+
+```mermaid
+sequenceDiagram
+    Untracked
+    Staged
+    History
+    Note over History: README
+```
+
+Ora il file README sara' sempre marcato come tracked dal tool git, quindi, effettuando una modifica ad esso `echo "Daniele Tentoni" >> README` otteniamo il seguente stato:
+
+```mermaid
+sequenceDiagram
+    Untracked
+    Unmodified
+    Modified
+    Staged
+    Note over Modified: README
+```
+
+E l'output del comando `git status` sara' il seguente:
+
+```
+$ git status
+
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'dark' } }%%
+gitGraph
+    commit
+    branch sum
+    checkout sum
+    commit
+    checkout main
+    merge sum
+    branch sub
+    checkout sub
+    commit
+    checkout main
+    merge sub
+    branch mul
+    checkout mul
+    commit
+    checkout main
+    merge mul
+    branch div
+    checkout div
+    commit
+    checkout main
+    merge div
+```
