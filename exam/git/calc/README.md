@@ -8,7 +8,7 @@ A simple calculator program made in Python.
 * [Exercise](#exercise)
     * [Repository creation (Exercise 1)](#repository-creation-exercise-1)
     * [Create some contents (Exercise 2)](#create-some-contents-exercise-2)
-    * [Tag commits as versions (Execise 3)](#tag-commits-as-versions-execise-3)
+    * [Tag commits as versions (Exercise 3)](#tag-commits-as-versions-execise-3)
     * [Add remote and push (Exercise 4)](#add-remote-and-push-exercise-4)
     * [To the infinite and beyond!](#to-the-infinite-and-beyond)
 
