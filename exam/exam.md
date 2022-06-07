@@ -40,8 +40,6 @@ l'attività?
 Può essere---adattata---rivolta a studenti di diverse età e indirizzi?
 -->
 
-<!-- TODO: Controllare i documenti ministeriali e/o alla Proposta CINI -->
-
 L'attività è rivolta specialmente al triennio di un istituto tecnico con indirizzo informatico, da svolgere durante le ore di Informatica o discipline annesse (Sistemi e Reti o Gestione di Progetto).
 
 In generale, potendo tramite Git tracciare qualunque prodotto in grado di essere memorizzato su supporto informatico, l'attività può essere riadattata per poter insegnare Git ad un qualunque pubblico di studenti delle scuole superiori a cui si vuole proporre uno strumento di memorizzazione o versionamento alternativo ai classici storage fisici (pennette usb, supporti ottici ...) o cloud (Onedrive, Google Drive ...).
@@ -57,6 +55,7 @@ Una sua brevissima descrizione generale
 Ho scelto di realizzare questa attività per due principali motivi:
 
 1. La proporrei principalmente a studenti che hanno scelto il mio stesso percorso di studi alle scuole superiori, dove mi piacerebbe andare ad insegnare e dove penso che questa attività possa servire maggiormente, preparando gli studenti ad utilizzare uno dei più diffusi tools per il versionamento del codice;
+
 2. Avendo già avuto esperienza lavorativa ho notato che gli studenti usciti da tali percorsi di studi non sono preparati abbastanza per entrare con tranquillità e rapidità dentro al mondo del lavoro. Molti non possiedono le competenze da me ritenute minime per poter lavorare in modo collaborativo neanche a piccoli progetti software interni alla mia realtà aziendale attuale.
 
 Per tali motivi, penso che proporre agli studenti quelle che secondo me sono le competenze minime da acquisire durante il proprio percorso scolastico in tema di Versioning Control Systems e sviluppo collaborativo alla scrittura del codice sia un esercizio utile in preparazione alle future lezioni a studenti delle scuole e neo assunti interni alla mia azienda.
@@ -69,7 +68,7 @@ Perché questa proposta è innovativa? Cosa è già presente su questo tema nell
 
 Moltissime attività disponibili in rete che ho cercato non coprono gli stessi argomenti di questa. L'insieme delle competenze che vengono proposte nel seguente materiale è la scrematura di tutte quelle che io abbia mai usato nel mio ambito lavorativo fino adesso (al 2022 è il 5 anno di lavoro in un'azienda software cesenate di una ventina di dipendenti) e che penso siano assolutamente irrinunciabili per una persona neo-diplomata che voglia affacciarsi sul mondo del lavoro in ambito informatico.
 
-Alcune delle risorse disponibili online attualmente sono:
+Alcune delle risorse disponibili online attualmente che permettono di apprendere gli stessi concetti espressi in questo materiale didattico (e anche di piu') sono:
 
 - [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
 : Ebook scaricabile dal sito ufficiale del progetto Git. Moltissimi argomenti vengono trattati, potrebbe far desistere chi invece cerca un approccio più pragmatico. Include anche un capitolo sullo strumento Github, esattamente come questo materiale didattico. Quindi a mio parere è la scelta più valida possibile per chi volesse approfondire l'argomento autonomamente a casa;
@@ -83,6 +82,20 @@ Alcune delle risorse disponibili online attualmente sono:
 - [https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 : Elenco dei principali comandi di Git curata dai sopracitati collaboratori di Atlassian.
 
+Un articolo accademico[^1] consultato e' stato [Integrating Git into CS1/2](https://dl.acm.org/doi/10.5555/3381569.3381583),  che spiega i risultati dell'insegnamento di Git nei corsi CS 1 e 2 il quale metodo differisce dal mio nei seguenti punti:
+
+1. usa Gitlab come hosting di repository remoti, in esecuzione su di un cluster interno alla rete d'istituto, mentre io usero' invece Github, in esecuzione su Github.com, pubblicamente accessibile da chiunque. La loro scelta consente di usare uno strumento *open core*, mentre quello scelto da me invece no[^2]. La mia scelta permette agli studenti di iniziare a comporre un proprio *curriculumn* informatico da mostrare in futuro alle aziende presso cui cercheranno lavoro. Una soluzione che potrebbe risolvere la questione potrebbe essere quella di usare Gitlab.com invece di eseguirlo su un cluster interno oppure per una soluzione completamente open source si potrebbe optare per Gitea, eseguibile anche su una Raspberry Pi oppure direttamente sul loro portale ufficiale.
+
+2. In esso la scoperta del tool git avviene diversamente da questo materiale didattico, in modo progressivo con l'avanzamento del corso, in modo tale che gli studenti vedano in separati momenti i diversi concetti. Attualmente io ho preferito la strada del fornire tutto l'insieme delle conoscenze necessarie ad uno sviluppo di un prodotto informatico con il supporto di Git, in modo tale che gli studenti poi possano toccare con mano i risultati delle loro lezioni ed essere soddisfatti del percorso svolto.
+
+3. In tale articolo inoltre si lamenta l'incremento del carico cognitivo degli alunni nell'imparare, oltre a programmare, anche l'uso di questo strumento. Non ho attualmente strumenti che mi permettano di affermare con certezza che riunire tali insegnamenti in alcune condensate lezioni possa ridurre negli studenti tale carico.
+
+Un altro articolo consultato e' [Pushing Git & GitHub in undergraduate computer science classes](https://dl.acm.org/doi/10.5555/3015220.3015251). In tale articolo viene specificato che separando le lezioni su Git usato solamente in locale e su Git usato anche con il repository remoto su Github sia piu' facile per gli studenti imparare i diversi concetti riducendo la confusione che ne potrebbe derivare.
+
+[^1]: Articoli consigliati dal professor Lodi durante il colloquio aperto a fine corso.
+
+[^2]: O quantomeno rilasciano open source molto software di corollario e secondario, rilasciarlo in toto han dichiarato che potrebbe danneggiare il loro business.
+
 ## Prerequisiti
 
 <!--
@@ -92,16 +105,21 @@ Elencare i contenuti che si suppone siano già stati svolti e appresi dagli stud
 Gli studenti devono già essere in possesso delle seguenti competenze *minime*:
 
 1. Manipolare files (creare, modificare, eliminare, spostare, copiare)
+
 2. Navigare su siti internet (nello specifico github.com per il secondo modulo)
 
 Le esercitazioni preparate per l'esame e fornite con questo materiale didattico, destinate a studenti di indirizzo informatico richiedono:
 
 1. Sapere cosa sia un algoritmo, un programma, una funzione, una istruzione, un dato
+
 2. Avere padronanza dei construtti semplici di un linguaggio a scelta del professore (in questo materiale didattico viene scelto il linguaggio Python)
+
+    *Sono stati proposti alcuni esercizi per provare i vari comandi git su casi pratici, nel primo viene anche fatto uso degli array e del passaggio dei parametri per riferimento. Questo puo' essere riadattato per combaciare meglio al secondo esercizio, dove non viene fatto uso di tali strutture dati.*
 
 Le seguenti conoscenze pregresse aiutano gli studenti a capire meglio gli argomenti trattati:
 
 1. Sapere cosa sia un sistema operativo e come vengono memorizzati i files
+
 2. Sapere cosa sia un'interfaccia a riga di comando, eseguire comandi e programmi, eseguire programmi con interfaccia grafica
 
 Nel caso si ritenga superfluo o oneroso l'uso dell'interfaccia a riga di comando di git, possono essere valutati dei programmi ad interfaccia grafica come sostituti, come ad esempio:
@@ -112,7 +130,9 @@ Nel caso si ritenga superfluo o oneroso l'uso dell'interfaccia a riga di comando
 
 * [Github Desktop](https://desktop.github.com/) (Windows, Mac)
 
-Git e i programmi sopra citati vengono tutti rilasciati con licenze aperte e libere.
+* Estensioni per il proprio editor: Per moltissimi editor di testo esistono moltissime estensioni che permettono di aggiungere sezioni con client per git (vscode per esempio ne possiede uno gia' integrato)
+
+* [Github.com](https://github.com): Creato un repository, premendo `.` si usa un editor web in stile vscode (quindi con integrato un client git)
 
 ## Contenuti
 
@@ -145,17 +165,13 @@ Al termine delle lezioni nell'area `github` lo studente sa:
 
 Al termine di tutte le lezioni lo studente ha le competenze di gestire un progetto sofware al quale possano contribuire più persone, sia come spettatore (consultandolo soltanto), come utilizzatore (segnalando eventuali problemi), come contributore (sviluppando nuove funzionalità o correggendo quelle esistenti) e anche come manutentore (assegnando compiti ai contributori e in generale gestendo le relazioni con tutti gli attori del progetto).
 
-Di seguito vengono schematizzati gli obiettivi seguendo le indicazioni della tassonomia Bloom rivisitata [^bloom].
-
 | Dimensioni | Base | Intermedio | Avanzato |
 | --- | --- | --- | --- |
-| Repository locale | Lo studente sa creare il repository, committare dei file in esso. | Lo studente sa usare la staging area e scegliere quali file aggiungere. | Lo studente sa usare la staging area per aggiungere piccole modifiche tra le varie contenute dentro ad un certo file e le ha committate, scegliendo un adeguato commento per il commit. |
-| Branches | Lo studente sa come visualizzare i rami presenti in locale | Lo studente sa creare in locale e come riunirli | Lo studente sa creare rami e gestire flussi più complessi, sa gestire git flow complessi e sa spiegare i vantaggi che essi comportano. |
+| Repository locale | Lo studente sa creare il repository e committare dei file in esso. | Lo studente sa scegliere quali file aggiungere alla staging area e rimuoverli. | Lo studente sa aggiungere e rimuovere piccole modifiche tra le varie contenute dentro ad un certo file. Sa scegliere un adeguato commento per il commit. |
+| Branches | Lo studente sa creare in locale branch e come riunirli, sa come visualizzare i rami presenti in locale | Lo studente conosce la differenza la differenza tra branch locali e branch remoti e sa come ottenerli o pubblicarli. | Lo studente sa creare rami e gestire flussi più complessi, sa gestire git flow complessi e sa spiegare i vantaggi che essi comportano. |
 | Storia e Tags | Lo studente sa visualizzare la storia del repository e i tag presenti. Sa annotare il commit corrente. | Lo studente sa navigare nella storia e annotare i commit passati. | Lo studente sa navigare nella storia e modificarla in modo proprio, sa annotare e assegnare un nome e un messaggio semanticamente ricco di significato ad un commit. |
 | Github (contribuzione) | Lo studente sa sviluppare almeno una nuova funzionalità, usando correttamente i branch in locale e in remoto per *far arrivare* la feature sul branch principale su Github. | Lo studente sa aprire una pull request, chiedendo la correzione da parte di almeno un compagno. | Lo studente sa anche discutere con il compagno in merito alla soluzione proposta in modo costruttivo. |
 | Github (lavoro in team) | Lo studente sa svolgere i compiti ad esso assegnati. | Lo studente riesce a coordinare il gruppo sapendo assegnare a se stesso/i e agli altri i compiti da svolgere e le funzionalità da sviluppare in modo equo. | Lo studente sa aiutare i compagni, sia tramite discussioni di persona in laboratorio che attraverso lo strumento Issues di Github. Lo/gli studente/i con la predisposizione a coordinare il gruppo sa valorizzare ogni componente. |
-
-[^bloom]: [A Model of Learning Objectives](https://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/)
 
 ### Collegamento con i documenti ministeriali/proposte
 
@@ -214,9 +230,9 @@ Le lezioni frontali possono essere svolte in qualunque aula. Gli argomenti teori
 Quali materiali e strumenti (hardware e software, di ogni tipo, non solo informatico) sono necessari?
 -->
 
-Per la prima parte di spiegazione di concetti teorici sono necessari fogli di carta, forbici e scotch. Per la seconda parte più pratica sono necessari dei computer personali per ciascun studente per eseguire i comandi dello strumento Git. Essendo tale strumento disponibile per i più diffusi sistemi operativi.
+Per la prima parte di spiegazione di concetti teorici sono necessari fogli di carta, forbici e scotch. Per la seconda parte più pratica sono necessari dei computer personali per ciascun studente per eseguire i comandi dello strumento Git. Essendo tale strumento disponibile per i più diffusi sistemi operativi e totalmente gratuito, non esistono impedimenti strutturali che possano impedire ad uno studente di affrontare le lezioni proposte.
 
-Per la consegna degli esercizi di Git tramite Git basta l'accesso ad un server Git messo a disposizione all'interno del laboratorio, mentre per la parte di uso di Github serve necessariamente un collegamento ad internet (meglio se a banda larga, meglio specificare).
+Per la consegna degli esercizi di Git puo' essere usata la rete d'istituto e una cartella condivisa, dopo aver studiato i comandi per la pubblicazione delle proprie modifiche tramite git (push) puo' essere messo a disposizione un server Git interno alla rete d'istituto in modo temporaneo, per poi usare, dopo l'apposita lezione, Github (o altro servizio di hosting a scelta).
 
 # Sviluppo dei contenuti
 
@@ -232,29 +248,51 @@ Deve contenere almeno:
 
 ## Introduzione al versionamento del codice
 
-Al giorno d'oggi gli standard di qualita' dello sviluppo del codice impongono alle aziende e alle universita' di tenere sempre conto di chi lavora su quali progetti, su quali aree degli stessi, su quali singoli file per poter risalire ai proprietari in caso di attribuzione di proprieta' intellettuale sugli stessi, ricerca e risoluzione di problemi o quantificazione della retribuzione per l'eventuale lavoro svolto. In ambito scolastico, uno studente potrebbe avere la necessita' di ripristinare il proprio esercizio o elaborato ad uno stadio precedente dopo aver svolto una prova o aver continuato per una strada sbagliata e voler tornare indietro. Piu' in generale, chiunque vorrebbe poter aggiungere, modificare, eliminare o manipolare in qualunque modo un prodotto informatico da solo e poter seguire diversi sviluppi differenti oppure lavorare con un team di persone che hanno bisogno di manupolare lo stesso prodotto contemporaneamente senza incorrere perennemenete in problemi di aggiornamento della propria versione del prodotto. Una prima soluzione a tutti questi problemi potremmo averla usando solamente il nostro file system. Facciamo l'esempio del programmatore solitario:
+Al giorno d'oggi gli standard di qualita' dello sviluppo del codice impongono alle aziende e alle universita' di tenere sempre conto di chi lavora su quali progetti, su quali aree degli stessi e su quali singoli file. I motivi potrebbero essere:
+
+* risalire ai proprietari per l'attribuzione di proprieta' intellettuale;
+
+* ricerca e risoluzione di problemi;
+
+* misurazione della retribuzione per l'eventuale lavoro svolto.
+
+In ambito strettamente scolastico, uno studente ha la necessita' di ripristinare il proprio esercizio o elaborato ad uno stadio precedente dopo aver svolto una prova o aver continuato per una strada sbagliata, accorgendosi di aver fatto un errore.
+
+Piu' in generale, chiunque vorrebbe poter aggiungere, modificare, eliminare o manipolare in qualunque modo un prodotto informatico da solo e poter seguire diversi sviluppi differenti, oppure lavorare con un team di persone che hanno bisogno di lavorare sullo stesso prodotto contemporaneamente senza incorrere perennemenete in problemi di aggiornamento della propria versione del prodotto.
+
+Una prima soluzione a tutti questi problemi potremmo averla usando solamente il nostro file system. Facciamo l'esempio del "programmatore solitario":
+
 1. Alla creazione del nuovo progetto, crea una cartella `Prog`
+
 2. Aggiunge files alla cartella `Prog`, come un `main.py`, `dataset.txt` e altri
+
 3. Vuole provare a sviluppare la funzionalita' di modifica del dataset in base a certi parametri, quindi crea la cartella `Prog_before_params` dove copia il contenuto attuale della cartella `Prog` come backup nel caso in cui dovesse tornare indietro e inizia a modificarne il contenuto
-4. Il cliente gli chiede di iniziare anche a sviluppare una funzionalita' per leggere eventuali dataset in un formato differente, quindi crea una copia della cartella `Prog_before_params` e la rinomina in `Prog_nuovo_formato`
 
-Si nota quindi come per cambiare di poche righe di codice un progetto in corso per ciascuna funzionalita' si devono creare diverse copie della cartella contenente il nostro progetto appunto. Volendo poi salvare lo stato del progetto durante le varie fasi della sua vita, creando un *backup* per la versione 1, uno per la versione 2 e altre per ogni versione prodotta, si capisce che la quantita' di file duplicati superi di gran lunga quella realmente necessaria, magari dobbiamo duplicare centinaia di file per delle modifiche a una manciata di files.
+4. Un cliente gli chiede di iniziare anche a sviluppare una funzionalita' per leggere eventuali dataset in un formato differente, quindi crea una copia della cartella `Prog_before_params` e la rinomina in `Prog_nuovo_formato` e inizia a lavorarci
 
-Per questo vengono in nostro aiuto il sistemi odierni di versionamento del codice. Nel corso del tempo sono state adottate varie tecniche e metodologie per gestire le versioni di un qualunque prodotto informatico, in particolare citiamo due diverse e contrapposte modalita':
-* la centralizzata: un unico punto di verita' (da qui chiamato per semplicita' server) contiene tutto il nostro progetto e ogni persona che vuole contribuire ad esso deve chiedere il permesso di modificarne una parte (creare un nuovo file, modificarne uno esistente, eliminarne...) e una volta terminato, notifica al server di aver completato le modifiche e il server si occupa di salvare l'aggiornamento. Questa modalita' nel tempo e' stata sempre meno utilizzata in favore della successiva, dato che creava problemi quando piu' persone volevano modificare la stessa porzione del progetto oppure se la fonte centrale del progetto era inaccessibile, non era possibile lavorare.
+5. Poi il cliente vuole la funzionalita' che lo sviluppatore ha iniziato a fare nel punto 3, ma con qualche modifica, quindi lo sviluppatore deve prelevare le modifiche introdotte, capire come modificarle opportunamente e trasferirle nella cartella del cliente
+
+Si nota quindi come per cambiare poche righe di codice in un progetto in corso per ciascuna funzionalita' si devono creare diverse copie di file e cartelle. Volendo poi salvare lo stato del progetto durante le varie fasi della sua vita, creando un *backup* per la versione 1, uno per la versione 2 e altre per ogni versione prodotta, si capisce che la quantita' di risorse duplicate e spazio occupato superi di gran lunga quella iniziale per il progetto in sé. Magari dobbiamo duplicare centinaia di file per delle modifiche a una manciata di files.
+
+Per questo vengono in nostro aiuto i sistemi odierni di versionamento del codice. Nel corso del tempo sono state adottate varie tecniche e metodologie per gestire le versioni di un qualunque prodotto informatico, in particolare citiamo due diverse e contrapposte modalita':
+
+* la centralizzata: un unico punto di verita' (da qui chiamato per semplicita' server) contiene tutto il nostro progetto e ogni persona che vuole contribuire ad esso deve chiedere il permesso di modificarne una parte (creare un nuovo file, modificarne uno esistente, eliminarne...) e una volta terminato, notifica al server di aver completato le modifiche e il server si occupa di salvare l'aggiornamento. Questa modalita' nel tempo e' stata sempre meno utilizzata in favore della successiva, dato che creava problemi quando piu' persone volevano modificare la stessa porzione del progetto oppure se la fonte centrale del progetto era inaccessibile, non era possibile lavorare;
+
 * la distribuita: ogni sviluppatore possiede l'intera copia del progetto sul quale si sta lavorando e puo' in ogni momento lavorare su di esso. Quando sara' pronto a pubblicare le proprie implementazioni, allora lui stesso si assume il compito di chiedere agli altri contribuenti di scaricare le modifiche dalla propria versione del progetto o sara' lui ad inviarle agli altri.
 
-Nel mio materiale didattico usero' la modalita' distribuita, ad oggi tra le piu' utilizzate in ambito scolastico, accademico e lavorativo. Vedremo nel dettaglio lo strumento **Git** per versionare un progetto in ambito locale, sulla propria macchina e gestirne le versioni e lo sviluppo di diverse funzionalita'. Vedremo lo strumento **Github** come gestore di progetti versionati salvati in una localita' remota che ci aiuta anche a gestire la contribuzioni agli stessi progetti dei nostri compagni e colleghi.
+Di seguito vedremo solamente la modalita' distribuita, ad oggi tra le piu' utilizzate in ambito scolastico, accademico e lavorativo. Vedremo nel dettaglio lo strumento **Git** per versionare un progetto in ambito locale, sulla propria macchina e gestirne le versioni e lo sviluppo di diverse funzionalita'. Vedremo lo strumento **Github** come gestore di progetti versionati salvati in una localita' remota che ci aiuta anche a gestire la contribuzioni ai progetti dei nostri compagni e colleghi.
 
 ## Versionamento del codice (unplugged)
 
 Dimostrazione della modalita' di versionamento del codice proposta da *Git* usando fogli di carta, forbici e scotch. Tutte le operazioni in seguito proposte potranno essere riviste in laboratorio tramite comandi Git scritti tra parentesi.
 
+Un repository e' un insieme di file e di oggetti (o metadati). La similitudine con un archivio inizialmente vuoto e una scrivania piena di fogli sparsi ci permette di immaginare il concetto. Proporre un foglio con un programma scritto da "archiviare" ci permette di semplificare il concetto rendendolo riproducibile senza l'uso di un elaboratore e ci permette di introdurre i concetti un po' alla volta.
+
 Prendere un foglio e scrivere sopra un programma Python che effettui la divisione di due numeri come nel codice seguente:
 
 ```python
 """
-Make the division between two numbers.
+Divide two numbers.
 """
 
 first = float(input("First param:"))
@@ -266,15 +304,27 @@ result = first / second
 print("The result is " + str(result))
 ```
 
-Quando il codice e' stato scritto, si vuole salvare il lavoro svolto nel nostro sistema di versionamento del codice (`add` e `commit`). Scriviamo affianco di ogni riga il nostro nome e l'ora della modifica (per semplicita' vengono mostrate solamente le prime righe):
+Quando il codice e' stato scritto, tale foglio e' come se fosse ancora sulla scrivania del programmatore. Quando si vuole salvare il lavoro svolto, lo si affida ad un archivista in attesa di essere effettivamente inserito nell'archivio (`add`). Quando siamo pronti per archiviarlo, si dice all'archivista di creare il nostro primo metadato: scrivere su un altro foglio di carta un codice univoco, la data, l'autore,  un commento che spieghi cosa si e' svolto e la riga `+ program.py` per indicare che si e' aggiunto un file al repository:
 
-```python
-"""                                         Daniele Tentoni (9:50)
-Make the division between two numbers.      Daniele Tentoni (9:50)
-"""                                         Daniele Tentoni (9:50)
+```
+commit a8tnf
+Author: Daniele Tentoni
+Date: 2022-06-07 12:48
+
+    Aggiunta divisione tra numeri.
+
+    + program.py
 ```
 
-A questo punto, simulare la modifica di tale codice aggiungendo il seguente codice per il controllo dell'input sul divisore:
+Quindi affianco di ogni riga si scrive il relativo codice (`commit`). Per semplicita' vengono mostrate solamente le prime righe:
+
+```
+"""                                         a8tnf
+Make the division between two numbers.      a8tnf
+"""                                         a8tnf
+```
+
+A questo punto, simulare la modifica di tale codice, aggiungendo ad esempio il seguente codice per il controllo dell'input sul divisore:
 
 ```python
 if second == 0:
@@ -282,9 +332,7 @@ if second == 0:
     exit()
 ```
 
-Scriviamo quindi il codice precedente su una striscia di carta.
-
-Ritagliamo il foglio di carta principale nel punto indicato dalle freccie nel punto indicato di seguito:
+Scriviamo quindi il codice precedente su due strisce di carta ritagliate da un altro foglio. In questo momento stiamo ancora lavorando sulla scrivania del programmatore. Spiegare agli studenti che ogni striscia di carta che produciamo sulla nostra scrivania e' chiamata hunk e rappresenta l'unita' di base delle modifiche al nostro repository. Adesso vogliamo tornare dall'archivista per far inserire nell'archivio queste nuove righe. Diciamo quindi all'archivista di aggiungere queste righe in mezzo al nostro programma (`add`): ritagliamo il foglio di carta principale nel punto indicato dalle freccie nel punto indicato di seguito:
 
 ```
 second = float(input("Second param:"))
@@ -294,7 +342,7 @@ second = float(input("Second param:"))
 result = first / second
 ```
 
-Dato che essa sara' una parte aggiunta, attacchiamo con lo scotch le due parti del foglio principale con la striscia per l'aggiunta, in questo modo (un ulteriore `add`):
+Dato che essa sara' una parte aggiunta, attacchiamo con lo scotch le due parti del foglio principale con una striscia per l'aggiunta, in questo modo:
 
 ```
 second = float(input("Second param:"))
@@ -310,41 +358,72 @@ if second == 0:
 result = first / second
 ```
 
-A questo punto, scriviamo di lato il nome di chi ha apportato la modifica e l'ora in cui e' avvenuto (`commit` delle ultime modifiche effettuate), cosi':
+Quindi ora diciamo all'archivista di confermare le modifiche svolte (`commit`). Scriviamo sul foglio dei metadati le seguenti righe e le striscie di carta rimanenti:
+
+```
+commit gehe
+Author: Daniele Tentoni
+Date: 2022-06-07 13:48
+
+    Aggiunta divisione tra numeri.
+
+    <-----------> Incolliamo aggiunte <----------->
+    <-----------> Incolliamo rimozioni <----------->
+```
+
+Poi scriviamo di lato il codice del nuovo commit (`commit` delle ultime modifiche effettuate), cosi':
 
 ```
 ...
 
-if second == 0:                             Daniele Tentoni (9:55)
-    print("Second param cannot be 0")       Daniele Tentoni (9:55)
-    exit()                                  Daniele Tentoni (9:55)
+if second == 0:                             gehe
+    print("Second param cannot be 0")       gehe
+    exit()                                  gehe
 
 ...
 ```
 
-Il risultato finale visibile sara' quindi il seguente (in laboratorio o con l'ausilio di un computer e `git` possiamo vedere lo stesso risultato usando `blame`):
+Il risultato finale visibile sara' quindi il seguente:
 
-```python
-"""                                         Daniele Tentoni (9:50)
-Make the division between two numbers.      Daniele Tentoni (9:50)
-"""                                         Daniele Tentoni (9:50)
+```
+"""                                         a8tnf
+Make the division between two numbers.      a8tnf
+"""                                         a8tnf
 
-first = float(input("First param:"))        Daniele Tentoni (9:50)
+first = float(input("First param:"))        a8tnf
 
-second = float(input("Second param:"))      Daniele Tentoni (9:50)
+second = float(input("Second param:"))      a8tnf
 
-if second == 0:                             Daniele Tentoni (9:55)
-    print("Second param cannot be 0")       Daniele Tentoni (9:55)
-    exit()                                  Daniele Tentoni (9:55)
+if second == 0:                             gehe
+    print("Second param cannot be 0")       gehe
+    exit()                                  gehe
 
-result = first / second                     Daniele Tentoni (9:50)
+result = first / second                     a8tnf
 
-print("The result is " + str(result))       Daniele Tentoni (9:50)
+print("The result is " + str(result))       a8tnf
 ```
 
-In questo modo abbiamo visto come creare una nuova risorsa, aggiungerla al sistema di controllo di versione, preparare una modifica ad essa ed applicarla. Gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta.
+Questo e' il contenuto del repository (il nostro archivio) dopo le operazioni effettuate.
 
-### Tag (o etichetta)
+In questo modo abbiamo visto come creare una nuova risorsa, aggiungerla al sistema di controllo di versione, preparare una modifica ad essa ed applicarla.
+
+Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
+
+* storia del repository (`log`): la storia del commit e' quella scritta sul foglio dei metadati. Navigarla vuol dire tagliare/scotchare le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`).
+
+* rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso. Si puo' far ricostruire agli studenti su un altro foglio di carta l'albero del repository
+
+* tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi
+
+*Gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta.*
+
+### Laboratorio Git
+
+Vedere l'esercizio proposto nella cartella git
+
+### Laboratorio Github
+
+Vedere l'esercizio proposto nella cartella github
 
 Cosa sono:
 * un hunk
@@ -369,6 +448,12 @@ Dopo l'installazione bisogna configurare git usando i comandi:
 git config --global user.name
 git config --global user.email
 ```
+
+# Conclusioni
+
+Git e la maggior parte dei programmi, servizi, utility e altri prodotti informatici sopra citati vengono rilasciati con licenze aperte e libere.
+
+Si vuole fare notare in questa istanza che il codice di Github non e' completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che *aprirlo* potrebbe danneggiare il loro business). Un'altra alternativa maggiormente  open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati *open core*) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) e' [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di CI integrato (come le Github Actions o Gitlab CI), per questo deve essere usato un servizio esterno.
 
 # Bibliografia
 
