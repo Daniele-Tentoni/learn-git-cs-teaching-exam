@@ -36,6 +36,7 @@ jobs:
             --from=markdown
             --to=html
             --output=dist/index.html
+            --citeproc
             ${{ steps.files_list.outputs.files }}
 
       - uses: actions/upload-artifact@v3.0.0
