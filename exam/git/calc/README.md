@@ -58,4 +58,4 @@ Look at remote references of your repository. Add a remote reference, call it as
 
 ### To the infinite and beyond!
 
-If you have completed all previous exercises, continue to modify your calc, commit each change to the repository each time you finish to implement one, tag versions when you think your work is stable and ready for a **"consegna"** and push frequently to the remote repository.
+If you have completed all previous exercises, continue to modify your calc, commit each change to the repository each time you finish to implement one, tag versions when you think your work is stable and ready for a submit and push frequently to the remote repository.

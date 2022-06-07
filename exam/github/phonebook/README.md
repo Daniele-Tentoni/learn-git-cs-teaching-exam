@@ -55,6 +55,8 @@ Some features available:
 
     You can confirm the field content or modify it.
 
+## Advanced features
+
 Features that will be available:
 1. Send a simple text mail to an existing contact
 2. Create contact groups (new groups are empty from contact)
@@ -62,3 +64,13 @@ Features that will be available:
     b. Remove a contact from a group
     c. Send emails to all contacts in a group
 3. Save phonebook data in the local file system (think at the best way to do that)
+
+## Exercise
+
+Collaborate with your teammates to develop base features of this phonebook:
+
+1. Create an issue for each feature to develop, discuss in the issue comments about best methods and implementations of that feature and assign that issue to the teammates who is account for it
+2. When all work is divided among all mates, fork the main the repo in your account and start to work
+3. Submit a pull request when you are ready and discuss with your teammates about the correctness of your implementation
+
+Your evaluation will count both programming and collaborating skills.

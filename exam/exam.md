@@ -173,14 +173,7 @@ Al termine di tutte le lezioni lo studente ha le competenze di gestire un proget
 | Github (contribuzione) | Lo studente sa sviluppare almeno una nuova funzionalità, usando correttamente i branch in locale e in remoto per *far arrivare* la feature sul branch principale su Github. | Lo studente sa aprire una pull request, chiedendo la correzione da parte di almeno un compagno. | Lo studente sa anche discutere con il compagno in merito alla soluzione proposta in modo costruttivo. |
 | Github (lavoro in team) | Lo studente sa svolgere i compiti ad esso assegnati. | Lo studente riesce a coordinare il gruppo sapendo assegnare a se stesso/i e agli altri i compiti da svolgere e le funzionalità da sviluppare in modo equo. | Lo studente sa aiutare i compagni, sia tramite discussioni di persona in laboratorio che attraverso lo strumento Issues di Github. Lo/gli studente/i con la predisposizione a coordinare il gruppo sa valorizzare ogni componente. |
 
-### Collegamento con i documenti ministeriali/proposte
-
-<!--
-Indicare quali traguardi/obiettivi presenti nei documenti rilevanti vengono
-raggiunti (es. Indicazioni nazionali per il primo ciclo, Nuovi scenari,
-Proposta CINI numerata, Indicazioni nazionali / linee guida per scuola
-secondaria di secondo grado).
--->
+Queste lezioni promuovono la conoscenza del ciclo di vita di un prodotto informatico rendendo coscenti gli studenti di uno degli strumenti piu' diffusi in ambito aziendale e non per il versionamento del codice e assicurazione della qualita'. Gli studenti acquisiranno le basi per poter apprendere piu' facilmente lo sviluppo agile e le pratiche DevOps, oggi giorno sempre piu' diffuse in ambito aziendale.
 
 ## Metodologie didattiche
 
