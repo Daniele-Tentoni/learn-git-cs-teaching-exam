@@ -1,11 +1,9 @@
+#!/usr/bin/env python3
 """
 Main module of PyPhonebook utility.
 
 Process command line inputs and execute requested operations.
 """
-
-import os
-import sys
 
 def list_contacts():
   """
@@ -18,10 +16,12 @@ def list_contacts():
           Surname
           Email
   """
+  print("No contacts")
   pass
 
 def add_contact():
   """Add a contact to the phonebook."""
+  print("Added")
   pass
 
 def remove_contact():
@@ -32,18 +32,22 @@ def update_contact():
   """Update a contact in the phonebook."""
   pass
 
-def cli(args: list[str]):
+def cli():
   """Process the command line arguments of the program."""
-  if "ls" in args:
-    list_contacts()
-  elif "add" in args:
-    add_contact()
-  elif "rm" in args:
-    remove_contact()
-  elif "up" in args:
-    update_contact()
+  running = True
 
-  sys.exit(os.EX_OK)
+  while running:
+    choice = input("PyPhonebook: digit a command and enter (help for more info): ")
+    if choice == "ls":
+      list_contacts()
+    elif choice == "new":
+      add_contact()
+    elif choice == "rm":
+      remove_contact()
+    elif choice == "up":
+      update_contact()
+    elif choice == "exit":
+      running = False
 
 if __name__ == "__main__":
-  cli(sys.argv[1:])
+  cli()

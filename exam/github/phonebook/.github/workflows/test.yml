@@ -1,7 +1,7 @@
 # For students: don't modify this file for the exercise
 # To go on on Github Actions, look at the official doc.
 
-name: Check Reuse Compliance
+name: Run tests on student program using expect
 
 on:
   pull_request:
@@ -9,15 +9,16 @@ on:
       - "main"
 
 jobs:
-  reuse-lint:
+  test-expect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.2
 
-      - name: Test some operations
-        shell: bash
+      - name: Install expect
         run: |
-          [[ ${python3 calc.py div 10 2.5} -eq 4 ]]
-          [[ ${python3 calc.py mul 10.5 2} -eq 21 ]]
-          [[ ${python3 calc.py sub 10.33 2.33} -eq 8 ]]
-          [[ ${python3 calc.py sum 10.6 2.6} -eq 13.2 ]]
+          sudo apt install expect
+
+      # Workflow fail if exit code is different from 0
+      - name: Test some operations
+        run: |
+          ./test.sh
