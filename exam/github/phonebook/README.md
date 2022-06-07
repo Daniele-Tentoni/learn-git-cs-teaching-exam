@@ -1,17 +1,17 @@
 # PyPhonebook
 
-Organize contacts from your PC!
+Organize contacts using this CLI tool!
 
 Add contacts to your phonebook using this simple cli utility. Some info you can store are:
-1. Name and Surname
-2. E-mail Address
-3. Nickname
+1. Nickname
+2. Name and Surname
+3. E-mail Address
 
 Some features available:
 
 1. List all your contacts:
 
-    Run this tool using `python3 phonebook.py ls` to show all your saved contacts. You will obtain an output like this::
+    Show all your saved contacts. You will obtain an output like this::
 
         Tento
             Name: Daniele
