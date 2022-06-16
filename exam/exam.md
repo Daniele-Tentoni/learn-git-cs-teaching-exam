@@ -6,23 +6,29 @@ SPDX-License-Identifier: CC0-1.0
 -->
 
 ---
+
 title: Lezione Tool Git
 author: Daniele Tentoni
 date: 17/05/2022
 bibliography: exam/exam.bib
+
 ---
 
 Esame di Didattica dell'Informatica, A.A. 2021/2022
 
-<!--
 # Changelog (se necessario)
 
+<!--
 Se questa relazione è stata già consegnata in precedenza, indicare qui
 
 * i cambiamenti più sificativi
 * dove trovare un eventuale diff (se ritenuto necessario)
 * risposte a eventuali domande/commenti fatti dai docenti sulle versioni precedenti
 -->
+
+## Post esame 21/06
+
+- incluso riferimento a gioco oh-my-git
 
 # Inquadramento del lavoro
 
@@ -76,6 +82,8 @@ Alcune delle risorse disponibili online attualmente che permettono di apprendere
 
 - [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
 : Gioco gratuito per imparare nei primi livelli i comandi base e via via avanzando nel gioco concetti più complicati. Possibile allenamento in vista di interrogazioni e compiti in classe per gli studenti;
+
+- [https://ohmygit.org/](https://ohmygit.org/): Altro gioco gratuito e open source scaricabile per quasi tutte le piattaforme desktop per imparare i comandi, diversamente dal precedente non offre agli studenti proprio una console, offrendo una diversa gamification;
 
 - [https://www.atlassian.com/git](https://www.atlassian.com/git)
 : Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket. Propone guide ed esercizi per imparare ad usare gli strumenti Git e Bitbucket, similmente a https://lab.github.com/ per Githubò
