@@ -78,22 +78,22 @@ Moltissime attività disponibili in rete che ho cercato non coprono gli stessi a
 Alcune delle risorse disponibili online attualmente che permettono di apprendere gli stessi concetti espressi in questo materiale didattico (e anche di più) sono:
 
 - [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
-: Ebook scaricabile dal sito ufficiale del progetto Git. Moltissimi argomenti vengono trattati, potrebbe far desistere chi invece cerca un approccio più pragmatico. Include anche un capitolo sullo strumento Github, esattamente come questo materiale didattico. Quindi a mio parere è la scelta più valida possibile per chi volesse approfondire l'argomento autonomamente a casa;
+  : Ebook scaricabile dal sito ufficiale del progetto Git. Moltissimi argomenti vengono trattati, potrebbe far desistere chi invece cerca un approccio più pragmatico. Include anche un capitolo sullo strumento Github, esattamente come questo materiale didattico. Quindi a mio parere è la scelta più valida possibile per chi volesse approfondire l'argomento autonomamente a casa;
 
 - [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
-: Gioco gratuito per imparare nei primi livelli i comandi base e via via avanzando nel gioco concetti più complicati. Possibile allenamento in vista di interrogazioni e compiti in classe per gli studenti;
+  : Gioco gratuito per imparare nei primi livelli i comandi base e via via avanzando nel gioco concetti più complicati. Possibile allenamento in vista di interrogazioni e compiti in classe per gli studenti;
 
 - [https://ohmygit.org/](https://ohmygit.org/): Altro gioco gratuito e open source scaricabile per quasi tutte le piattaforme desktop per imparare i comandi, diversamente dal precedente non offre agli studenti proprio una console, offrendo una diversa gamification;
 
 - [https://www.atlassian.com/git](https://www.atlassian.com/git)
-: Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket. Propone guide ed esercizi per imparare ad usare gli strumenti Git e Bitbucket, similmente a https://lab.github.com/ per Githubò
+  : Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket. Propone guide ed esercizi per imparare ad usare gli strumenti Git e Bitbucket, similmente a https://lab.github.com/ per Githubò
 
 - [https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
-: Elenco dei principali comandi di Git curata dai sopracitati collaboratori di Atlassian. [@github_learning_lab]
+  : Elenco dei principali comandi di Git curata dai sopracitati collaboratori di Atlassian. [@github_learning_lab]
 
-Un articolo accademico[^1] consultato è stato [Integrating Git into CS1/2](https://dl.acm.org/doi/10.5555/3381569.3381583)[@integrating_git],  che spiega i risultati dell'insegnamento di Git nei corsi CS 1 e 2 il quale metodo differisce dal mio nei seguenti punti:
+Un articolo accademico[^1] consultato è stato [Integrating Git into CS1/2](https://dl.acm.org/doi/10.5555/3381569.3381583)[@integrating_git], che spiega i risultati dell'insegnamento di Git nei corsi CS 1 e 2 il quale metodo differisce dal mio nei seguenti punti:
 
-1. usa Gitlab come hosting di repository remoti, in esecuzione su di un cluster interno alla rete d'istituto, mentre io userò invece Github, in esecuzione su Github.com, pubblicamente accessibile da chiunque. La loro scelta consente di usare uno strumento *open core*, mentre quello scelto da me invece no[^2]. La mia scelta permette agli studenti di iniziare a comporre un proprio *curriculumn* informatico da mostrare in futuro alle aziende presso cui cercheranno lavoro. Una soluzione che potrebbe risolvere la questione potrebbe essere quella di usare Gitlab.com invece di eseguirlo su un cluster interno oppure per una soluzione completamente open source si potrebbe optare per Gitea, eseguibile anche su una Raspberry Pi oppure direttamente sul loro portale ufficiale.
+1. usa Gitlab come hosting di repository remoti, in esecuzione su di un cluster interno alla rete d'istituto, mentre io userò invece Github, in esecuzione su Github.com, pubblicamente accessibile da chiunque. La loro scelta consente di usare uno strumento _open core_, mentre quello scelto da me invece no[^2]. La mia scelta permette agli studenti di iniziare a comporre un proprio _curriculumn_ informatico da mostrare in futuro alle aziende presso cui cercheranno lavoro. Una soluzione che potrebbe risolvere la questione potrebbe essere quella di usare Gitlab.com invece di eseguirlo su un cluster interno oppure per una soluzione completamente open source si potrebbe optare per Gitea, eseguibile anche su una Raspberry Pi oppure direttamente sul loro portale ufficiale.
 
 2. In esso la scoperta del tool git avviene diversamente da questo materiale didattico, in modo progressivo con l'avanzamento del corso, in modo tale che gli studenti vedano in separati momenti i diversi concetti. Attualmente io ho preferito la strada del fornire tutto l'insieme delle conoscenze necessarie ad uno sviluppo di un prodotto informatico con il supporto di Git, in modo tale che gli studenti poi possano toccare con mano i risultati delle loro lezioni ed essere soddisfatti del percorso svolto.
 
@@ -102,7 +102,6 @@ Un articolo accademico[^1] consultato è stato [Integrating Git into CS1/2](http
 Un altro articolo consultato è [Pushing Git & GitHub in undergraduate computer science classes](https://dl.acm.org/doi/10.5555/3015220.3015251)[@pushing_git]. In tale articolo viene specificato che separando le lezioni su Git usato solamente in locale e su Git usato anche con il repository remoto su Github sia più facile per gli studenti imparare i diversi concetti riducendo la confusione che ne potrebbe derivare.
 
 [^1]: Articoli consigliati dal professor Lodi durante il colloquio aperto a fine corso.
-
 [^2]: O quantomeno rilasciano open source molto software di corollario e secondario, rilasciarlo in toto han dichiarato che potrebbe danneggiare il loro business.
 
 ## Prerequisiti
@@ -111,7 +110,7 @@ Un altro articolo consultato è [Pushing Git & GitHub in undergraduate computer 
 Elencare i contenuti che si suppone siano già stati svolti e appresi dagli studenti
 -->
 
-Gli studenti devono già essere in possesso delle seguenti competenze *minime*:
+Gli studenti devono già essere in possesso delle seguenti competenze _minime_:
 
 1. Manipolare files (creare, modificare, eliminare, spostare, copiare)
 
@@ -123,7 +122,7 @@ Le esercitazioni preparate per l'esame e fornite con questo materiale didattico,
 
 2. Avere padronanza dei construtti semplici di un linguaggio a scelta del professore (in questo materiale didattico viene scelto il linguaggio Python)
 
-    *Sono stati proposti alcuni esercizi per provare i vari comandi git su casi pratici, nel primo viene anche fatto uso degli array e del passaggio dei parametri per riferimento. Questo può essere riadattato per combaciare meglio al secondo esercizio, dove non viene fatto uso di tali strutture dati.*
+   _Sono stati proposti alcuni esercizi per provare i vari comandi git su casi pratici, nel primo viene anche fatto uso degli array e del passaggio dei parametri per riferimento. Questo può essere riadattato per combaciare meglio al secondo esercizio, dove non viene fatto uso di tali strutture dati._
 
 Le seguenti conoscenze pregresse aiutano gli studenti a capire meglio gli argomenti trattati:
 
@@ -133,15 +132,15 @@ Le seguenti conoscenze pregresse aiutano gli studenti a capire meglio gli argome
 
 Nel caso si ritenga superfluo o oneroso l'uso dell'interfaccia a riga di comando di git, possono essere valutati dei programmi ad interfaccia grafica come sostituti, come ad esempio:
 
-* [Git Extensions](https://gitextensions.github.io/) (Linux, Windows, Mac)
+- [Git Extensions](https://gitextensions.github.io/) (Linux, Windows, Mac)
 
-* [Ungit](https://github.com/FredrikNoren/ungit) (Linux, Windows, Mac)
+- [Ungit](https://github.com/FredrikNoren/ungit) (Linux, Windows, Mac)
 
-* [Github Desktop](https://desktop.github.com/) (Windows, Mac)
+- [Github Desktop](https://desktop.github.com/) (Windows, Mac)
 
-* Estensioni per il proprio editor: Per moltissimi editor di testo esistono moltissime estensioni che permettono di aggiungere sezioni con client per git (vscode per esempio ne possiede uno già integrato)
+- Estensioni per il proprio editor: Per moltissimi editor di testo esistono moltissime estensioni che permettono di aggiungere sezioni con client per git (vscode per esempio ne possiede uno già integrato)
 
-* [Github.com](https://github.com): Creato un repository, premendo `.` si usa un editor web in stile vscode (quindi con integrato un client git)
+- [Github.com](https://github.com): Creato un repository, premendo `.` si usa un editor web in stile vscode (quindi con integrato un client git)
 
 ## Contenuti
 
@@ -158,29 +157,31 @@ Quali traguardi e obiettivi di apprendimento si vuole raggiungere con le attivit
 -->
 
 Al termine delle lezioni nell'area `git` lo studente sa:
-* distinguere tra sistemi di versionamento centralizzati o distruibuiti
-* creare repository
-* usare la staging area per gestire le modifiche, l'aggiunta e la rimozione di files
-* registrare le modifiche nel repository tramite i commit, assegnare un messaggio utile per lo sviluppo del progetto
-* creare un branch, identificare un branch principale, creare branch secondari e spostarsi tra di essi per portare avanti diversi sviluppi del progetto
-* consultare la storia del repository essere consapevole di cosa significhi modificarla e come farlo consapevolmente per poter rimediare a degli errori
-* gestire i conflitti delle modifiche quando si manifestano
+
+- distinguere tra sistemi di versionamento centralizzati o distruibuiti
+- creare repository
+- usare la staging area per gestire le modifiche, l'aggiunta e la rimozione di files
+- registrare le modifiche nel repository tramite i commit, assegnare un messaggio utile per lo sviluppo del progetto
+- creare un branch, identificare un branch principale, creare branch secondari e spostarsi tra di essi per portare avanti diversi sviluppi del progetto
+- consultare la storia del repository essere consapevole di cosa significhi modificarla e come farlo consapevolmente per poter rimediare a degli errori
+- gestire i conflitti delle modifiche quando si manifestano
 
 Al termine delle lezioni nell'area `github` lo studente sa:
-* distinguere i concetti di repository locale, remoto, versioning centralizzato e distribuito
-* creare un repository remoto, collegarlo al suo repository in locale, eseguire download degli aggiornamenti dal repository remote e upload dal repository locale
-* usare le issue come richiesta di chiarimenti, segnalazione di un problema o suggerimento di una soluzione
-* usare le pull request come offerta di aggiunta di una nuova funzionalità e di una soluzione ad un problema riscontrato
+
+- distinguere i concetti di repository locale, remoto, versioning centralizzato e distribuito
+- creare un repository remoto, collegarlo al suo repository in locale, eseguire download degli aggiornamenti dal repository remote e upload dal repository locale
+- usare le issue come richiesta di chiarimenti, segnalazione di un problema o suggerimento di una soluzione
+- usare le pull request come offerta di aggiunta di una nuova funzionalità e di una soluzione ad un problema riscontrato
 
 Al termine di tutte le lezioni lo studente ha le competenze di gestire un progetto sofware al quale possano contribuire più persone, sia come spettatore (consultandolo soltanto), come utilizzatore (segnalando eventuali problemi), come contributore (sviluppando nuove funzionalità o correggendo quelle esistenti) e anche come manutentore (assegnando compiti ai contributori e in generale gestendo le relazioni con tutti gli attori del progetto).
 
-| Dimensioni | Base | Intermedio | Avanzato |
-| --- | --- | --- | --- |
-| Repository locale | Lo studente sa creare il repository e committare dei file in esso. | Lo studente sa scegliere quali file aggiungere alla staging area e rimuoverli. | Lo studente sa aggiungere e rimuovere piccole modifiche tra le varie contenute dentro ad un certo file. Sa scegliere un adeguato commento per il commit. |
-| Branches | Lo studente sa creare in locale branch e come riunirli, sa come visualizzare i rami presenti in locale | Lo studente conosce la differenza la differenza tra branch locali e branch remoti e sa come ottenerli o pubblicarli. | Lo studente sa creare rami e gestire flussi più complessi, sa gestire git flow complessi e sa spiegare i vantaggi che essi comportano. |
-| Storia e Tags | Lo studente sa visualizzare la storia del repository e i tag presenti. Sa annotare il commit corrente. | Lo studente sa navigare nella storia e annotare i commit passati. | Lo studente sa navigare nella storia e modificarla in modo proprio, sa annotare e assegnare un nome e un messaggio semanticamente ricco di significato ad un commit. |
-| Github (contribuzione) | Lo studente sa sviluppare almeno una nuova funzionalità, usando correttamente i branch in locale e in remoto per *far arrivare* la feature sul branch principale su Github. | Lo studente sa aprire una pull request, chiedendo la correzione da parte di almeno un compagno. | Lo studente sa anche discutere con il compagno in merito alla soluzione proposta in modo costruttivo. |
-| Github (lavoro in team) | Lo studente sa svolgere i compiti ad esso assegnati. | Lo studente riesce a coordinare il gruppo sapendo assegnare a se stesso/i e agli altri i compiti da svolgere e le funzionalità da sviluppare in modo equo. | Lo studente sa aiutare i compagni, sia tramite discussioni di persona in laboratorio che attraverso lo strumento Issues di Github. Lo/gli studente/i con la predisposizione a coordinare il gruppo sa valorizzare ogni componente. |
+| Dimensioni              | Base                                                                                                                                                                        | Intermedio                                                                                                                                                 | Avanzato                                                                                                                                                                                                                           |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repository locale       | Lo studente sa creare il repository e committare dei file in esso.                                                                                                          | Lo studente sa scegliere quali file aggiungere alla staging area e rimuoverli.                                                                             | Lo studente sa aggiungere e rimuovere piccole modifiche tra le varie contenute dentro ad un certo file. Sa scegliere un adeguato commento per il commit.                                                                           |
+| Branches                | Lo studente sa creare in locale branch e come riunirli, sa come visualizzare i rami presenti in locale                                                                      | Lo studente conosce la differenza la differenza tra branch locali e branch remoti e sa come ottenerli o pubblicarli.                                       | Lo studente sa creare rami e gestire flussi più complessi, sa gestire git flow complessi e sa spiegare i vantaggi che essi comportano.                                                                                             |
+| Storia e Tags           | Lo studente sa visualizzare la storia del repository e i tag presenti. Sa annotare il commit corrente.                                                                      | Lo studente sa navigare nella storia e annotare i commit passati.                                                                                          | Lo studente sa navigare nella storia e modificarla in modo proprio, sa annotare e assegnare un nome e un messaggio semanticamente ricco di significato ad un commit.                                                               |
+| Github (contribuzione)  | Lo studente sa sviluppare almeno una nuova funzionalità, usando correttamente i branch in locale e in remoto per _far arrivare_ la feature sul branch principale su Github. | Lo studente sa aprire una pull request, chiedendo la correzione da parte di almeno un compagno.                                                            | Lo studente sa anche discutere con il compagno in merito alla soluzione proposta in modo costruttivo.                                                                                                                              |
+| Github (lavoro in team) | Lo studente sa svolgere i compiti ad esso assegnati.                                                                                                                        | Lo studente riesce a coordinare il gruppo sapendo assegnare a se stesso/i e agli altri i compiti da svolgere e le funzionalità da sviluppare in modo equo. | Lo studente sa aiutare i compagni, sia tramite discussioni di persona in laboratorio che attraverso lo strumento Issues di Github. Lo/gli studente/i con la predisposizione a coordinare il gruppo sa valorizzare ogni componente. |
 
 Queste lezioni promuovono, secondo le linee guida del Miur[@linee_guida], la conoscenza del ciclo di vita di un prodotto informatico rendendo coscenti gli studenti di uno degli strumenti più diffusi in ambito aziendale e non per il versionamento del codice e assicurazione della qualità. Gli studenti acquisiranno le basi per poter apprendere più facilmente lo sviluppo agile e le pratiche DevOps, oggi giorno sempre più diffuse in ambito aziendale.
 
@@ -250,11 +251,11 @@ Deve contenere almeno:
 
 Al giorno d'oggi gli standard di qualità dello sviluppo del codice impongono alle aziende e alle università di tenere sempre conto di chi lavora su quali progetti, su quali aree degli stessi e su quali singoli file. I motivi potrebbero essere:
 
-* risalire ai proprietari per l'attribuzione di proprietà intellettuale;
+- risalire ai proprietari per l'attribuzione di proprietà intellettuale;
 
-* ricerca e risoluzione di problemi;
+- ricerca e risoluzione di problemi;
 
-* misurazione della retribuzione per l'eventuale lavoro svolto.
+- misurazione della retribuzione per l'eventuale lavoro svolto.
 
 In ambito strettamente scolastico, uno studente ha la necessità di ripristinare il proprio esercizio o elaborato ad uno stadio precedente dopo aver svolto una prova o aver continuato per una strada sbagliata, accorgendosi di aver fatto un errore.
 
@@ -432,7 +433,7 @@ Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
 
 - storia del repository (`log`): il foglio di metadati, scritto dal commit meno recente a quello più, è di fatto la storia del nostro repository. Navigarla (`checkout`) vuol dire tagliare/attaccare con lo scotch le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`);
 
-- rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso. Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository;
+- rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso (questo è un altro dato che contribuisce a calcolare l'hash del commit). Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository;
 
 - tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi;
 
@@ -452,23 +453,23 @@ Proporre tale esercizio supportando gli alunni con maggiori difficoltà nella sc
 
 Vedere l'esercizio proposto nella cartella github.
 
-Le indicazioni sono le stesse del precedente esercizio. In questo caso l'esercizio è molto corposo, constringendo molti studenti a dover finire a casa, in altra sede o durante una lezione successiva. Lo sviluppo sullo stesso progetto da remoto è un fondamentale bisogno che viene soddisfatto e difficoltà che viene semplificata proprio dallo strumento in questione, per questo potrebbe essere anche forzato il fatto di dover finire a casa l'esercizio per poter mettere alla prova gli alunni anche sotto questo aspetto.
+Le indicazioni sono le stesse del precedente esercizio. In questo caso l'esercizio è molto corposo, constringendo molti studenti a dover finire a casa, in altra sede o durante una lezione successiva. Lo sviluppo sullo stesso progetto da remoto è un fondamentale bisogno che viene soddisfatto e difficoltà che viene semplificata proprio dallo strumento in questione. Per questo potrebbe essere anche forzato il fatto di dover finire a casa l'esercizio per poter mettere alla prova gli alunni anche sotto questo aspetto.
 
 # Conclusioni
 
 Git e la maggior parte dei programmi, servizi, utility e altri prodotti informatici sopracitati vengono rilasciati con licenze aperte e libere.
 
-Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che *aprirlo* potrebbe danneggiare il loro business). Un'altra alternativa maggiormente  open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati *open core*) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di CI integrato (come le Github Actions o Gitlab CI), per questo deve essere usato un servizio esterno.
+Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che _aprirlo_ potrebbe danneggiare il loro business). Un'altra alternativa maggiormente open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati _open core_) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di Continuous Integration integrato come le Github Actions o Gitlab CI (per eseguire codice ad ogni evento sul repository, come ad esempio eseguire dei controlli e la valutazione degli esercizi degli studenti), per questo deve essere usato un servizio esterno.
 
 Dopo queste lezioni, gli studenti possono essere pronti ad ulteriori conseguenze degli argomenti trattati, come ad esempio:
 
-* pratiche DevOps
+- pratiche DevOps
 
-* contribuzione a progetti Open Source
+- contribuzione a progetti Open Source
 
-* esplorazione di ulteriori servizi che permettano hosting di repository (alcuni proposti sopra)
+- esplorazione di ulteriori servizi che permettano hosting di repository (alcuni proposti sopra)
 
-* uso di Github Pages (o i concorrenti Gitlab Pages, Gitea non possiede anche in questo caso un servizio integrato, quindi bisognerebbe adottare una soluzione terza) per la pubblicazione di siti web statici o applicazioni web lato client (con l'uso di JQuery o i più modermi Vue, React o Angular)
+- uso di Github Pages (o i concorrenti Gitlab Pages, Gitea non possiede anche in questo caso un servizio integrato, quindi bisognerebbe adottare una soluzione terza) per la pubblicazione di siti web statici o applicazioni web lato client (con l'uso di JQuery o i più modermi Vue, React o Angular)
 
 # Bibliografia
 
