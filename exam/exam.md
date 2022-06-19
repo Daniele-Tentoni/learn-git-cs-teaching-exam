@@ -304,10 +304,16 @@ result = first / second
 print("The result is " + str(result))
 ```
 
-Quando il codice è stato scritto, tale foglio è come se fosse ancora sulla scrivania del programmatore. Quando si vuole salvare il lavoro svolto, lo si affida ad un archivista in attesa di essere effettivamente inserito nell'archivio (`add`). Quando siamo pronti per archiviarlo, si dice all'archivista di creare il nostro primo metadato: scrivere su un altro foglio di carta un codice univoco, la data, l'autore,  un commento che spieghi cosa si è svolto e la riga `+ program.py` per indicare che si è aggiunto un file al repository:
+Comando `add`: dichiara quali modifiche abbiamo intenzione di versionare.
+
+Quando il codice è stato scritto, tale foglio è come se fosse ancora sulla scrivania del programmatore. Quando si vuole salvare il lavoro svolto, lo si affida ad un archivista in attesa di essere effettivamente inserito nell'archivio (`add`).
+
+Comando `commit`: salva le modifiche nel repository e gli assegna un identificativo univoco.
+
+Quando siamo pronti per archiviarlo, si dice all'archivista di creare il nostro primo metadato (`commit`): scrivere su un altro foglio di carta: la data, l'autore, un commento che spieghi cosa si è svolto e la riga `+ program.py` per indicare che si è aggiunto un file al repository (lasciare riga vuota in cima):
 
 ```
-commit a8tnf
+# Riga vuota
 Author: Daniele Tentoni
 Date: 2022-06-07 12:48
 
@@ -316,15 +322,24 @@ Date: 2022-06-07 12:48
     + program.py
 ```
 
-Quindi affianco di ogni riga si scrive il relativo codice (`commit`). Per semplicità vengono mostrate solamente le prime righe:
+L'id del commit serve per identificare univocamente quella modifica all'interno di tutto il repository. Ogni informazione scritta nell'oggetto soprastante oltre al codice del commit serve a produrre di fatto il codice id del commit stesso. Nell'esempio, l'autore del commit, la data di esecuzione e il contenuto della modifica. Tutte queste informazioni vengono date in input ad una funzione che si occupa di generare un codice che sia univoco all'interno del repository. Più avanti vedremo come in un oggetto commit vengono inserite molte più informazioni, tutte necessarie quindi alla produzione dell'id. Per adesso quindi (ipotizzando di aver sottoposto ad una funzione di hash l'intero contenuto del nostro metadato) scegliamo un codice casuale di 8 caratteri e lo scriviamo in cima al nostro metadatoç
 
 ```
-"""                                         a8tnf
-Make the division between two numbers.      a8tnf
-"""                                         a8tnf
+commit 10vn3u7d
+Author: ...
 ```
 
-A questo punto, simulare la modifica di tale codice, aggiungendo ad esempio il seguente codice per il controllo dell'input sul divisore:
+Quindi affianco di ogni riga si scrive il relativo codice. Per semplicità vengono mostrate solamente le prime righe:
+
+```
+"""                                         10vn3u7d
+Make the division between two numbers.      10vn3u7d
+"""                                         10vn3u7d
+```
+
+In questo modo abbiamo visto come vengano eseguiti i comandi `add` e `commit`.
+
+A questo punto, simulare la modifica del codice del programma, aggiungendo ad esempio il seguente codice per il controllo dell'input sul divisore:
 
 ```python
 if second == 0:
@@ -409,13 +424,13 @@ In questo modo abbiamo visto come creare una nuova risorsa, aggiungerla al siste
 
 Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
 
-* storia del repository (`log`): la storia del commit è quella scritta sul foglio dei metadati. Navigarla vuol dire tagliare/scotchare le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`).
+- storia del repository (`log`): il foglio di metadati, scritto dal commit meno recente a quello più, è di fatto la storia del nostro repository. Navigarla (`checkout`) vuol dire tagliare/attaccare con lo scotch le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`);
 
-* rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso. Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository
+- rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso. Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository;
 
-* tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi
+- tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi;
 
-*Gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta.*
+_Gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta._
 
 ### Laboratorio Git
 
