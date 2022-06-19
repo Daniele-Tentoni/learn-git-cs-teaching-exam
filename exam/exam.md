@@ -284,7 +284,7 @@ Di seguito vedremo solamente la modalità distribuita, ad oggi tra le più utili
 
 ## Versionamento del codice (unplugged)
 
-Nota: Lo scopo di questa attività è di mostrare il versionamento del codice usato da _Git_ usando fogli di carta, forbici e scotch. Tutte le operazioni in seguito proposte potranno essere sperimentate in prima persona dagli studenti in laboratorio tramite i comandi Git scritti tra parentesi, su cui il docente dovrà soffermarsi particolarmente per permettere agli studenti di affrontare con maggior serenità i due esercizi di laboratorio proposti successivamente, associando ogni azione compiuta dagli studenti con il relativo comando.
+> Nota per il docente: Lo scopo di questa attività è di mostrare il versionamento del codice usato da _Git_ usando fogli di carta, forbici e scotch. Tutte le operazioni in seguito proposte potranno essere sperimentate in prima persona dagli studenti in laboratorio tramite i comandi Git scritti tra parentesi, su cui il docente dovrà soffermarsi particolarmente per permettere agli studenti di affrontare con maggior serenità i due esercizi di laboratorio proposti successivamente, associando ogni azione compiuta dagli studenti con il relativo comando.
 
 Un repository è un insieme di file e di oggetti (o metadati). La similitudine con un archivio inizialmente vuoto e una scrivania piena di fogli sparsi ci permette di rappresentare il concetto di luogo dove conservare degli oggetti seguendo una logica precisa. L'archivista è quindi il nostro strumento di versionamento, a cui affidiamo il compito di intervenire sull'archivio tramite dei nostri comandi. Proporre un foglio con un programma scritto da "archiviare" ci permette di semplificare il concetto rendendolo riproducibile senza l'uso di un elaboratore e ci permette di introdurre i concetti un po' alla volta.
 
@@ -304,11 +304,11 @@ result = first / second
 print("The result is " + str(result))
 ```
 
-Comando `add`: dichiara quali modifiche abbiamo intenzione di versionare.
+> Comando `add`: dichiara quali modifiche abbiamo intenzione di versionare.
 
 Quando il codice è stato scritto, tale foglio è come se fosse ancora sulla scrivania del programmatore. Quando si vuole salvare il lavoro svolto, lo si affida ad un archivista in attesa di essere effettivamente inserito nell'archivio (`add`).
 
-Comando `commit`: salva le modifiche nel repository e gli assegna un identificativo univoco.
+> Comando `commit`: salva le modifiche nel repository e gli assegna un identificativo univoco.
 
 Quando siamo pronti per archiviarlo, si dice all'archivista di creare il nostro primo metadato (`commit`): scrivere su un altro foglio di carta: la data, l'autore, un commento che spieghi cosa si è svolto e la riga `+ program.py` per indicare che si è aggiunto un file al repository (lasciare riga vuota in cima):
 
@@ -322,7 +322,7 @@ Date: 2022-06-07 12:48
     + program.py
 ```
 
-L'id del commit serve per identificare univocamente quella modifica all'interno di tutto il repository. Ogni informazione scritta nell'oggetto soprastante oltre al codice del commit serve a produrre di fatto il codice id del commit stesso. Nell'esempio, l'autore del commit, la data di esecuzione e il contenuto della modifica. Tutte queste informazioni vengono date in input ad una funzione che si occupa di generare un codice che sia univoco all'interno del repository. Più avanti vedremo come in un oggetto commit vengono inserite molte più informazioni, tutte necessarie quindi alla produzione dell'id. Per adesso quindi (ipotizzando di aver sottoposto ad una funzione di hash l'intero contenuto del nostro metadato) scegliamo un codice casuale di 8 caratteri e lo scriviamo in cima al nostro metadatoç
+L'id del commit serve per identificare univocamente quella modifica all'interno di tutto il repository. Ogni informazione scritta nell'oggetto soprastante oltre al codice del commit serve a produrre di fatto il codice id del commit stesso. Nell'esempio, l'autore del commit, la data di esecuzione e il contenuto della modifica. Tutte queste informazioni vengono date in input ad una funzione che si occupa di generare un codice che sia univoco all'interno del repository. Più avanti vedremo come in un oggetto commit vengono inserite molte più informazioni, tutte necessarie quindi alla produzione dell'id. Per adesso quindi (ipotizzando di aver sottoposto ad una funzione di hash l'intero contenuto del nostro metadato) scegliamo un codice casuale di 8 caratteri e lo scriviamo in cima al nostro metadato:
 
 ```
 commit 10vn3u7d
@@ -376,7 +376,6 @@ result = first / second
 Quindi ora diciamo all'archivista di confermare le modifiche svolte (`commit`). Scriviamo sul foglio dei metadati le seguenti righe e le striscie di carta rimanenti:
 
 ```
-commit gehe
 Author: Daniele Tentoni
 Date: 2022-06-07 13:48
 
@@ -386,14 +385,21 @@ Date: 2022-06-07 13:48
     <-----------> Incolliamo rimozioni <----------->
 ```
 
+Ipotizziamo di generare il codice univoco `o03j56d3` e lo scriviamo nel commit:
+
+```
+commit o03j56d3
+Author: ...
+```
+
 Poi scriviamo di lato il codice del nuovo commit (`commit` delle ultime modifiche effettuate), così:
 
 ```
 ...
 
-if second == 0:                             gehe
-    print("Second param cannot be 0")       gehe
-    exit()                                  gehe
+if second == 0:                             o03j56d3
+    print("Second param cannot be 0")       o03j56d3
+    exit()                                  o03j56d3
 
 ...
 ```
@@ -401,21 +407,21 @@ if second == 0:                             gehe
 Il risultato finale visibile sarà quindi il seguente:
 
 ```
-"""                                         a8tnf
-Make the division between two numbers.      a8tnf
-"""                                         a8tnf
+"""                                         10vn3u7d
+Make the division between two numbers.      10vn3u7d
+"""                                         10vn3u7d
 
-first = float(input("First param:"))        a8tnf
+first = float(input("First param:"))        10vn3u7d
 
-second = float(input("Second param:"))      a8tnf
+second = float(input("Second param:"))      10vn3u7d
 
-if second == 0:                             gehe
-    print("Second param cannot be 0")       gehe
-    exit()                                  gehe
+if second == 0:                             o03j56d3
+    print("Second param cannot be 0")       o03j56d3
+    exit()                                  o03j56d3
 
-result = first / second                     a8tnf
+result = first / second                     10vn3u7d
 
-print("The result is " + str(result))       a8tnf
+print("The result is " + str(result))       10vn3u7d
 ```
 
 Questo è il contenuto del repository (il nostro archivio) dopo le operazioni effettuate.
@@ -430,7 +436,9 @@ Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
 
 - tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi;
 
-_Gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta._
+- repository remoto (`push` e `pull`): esistono degli archivi dislocati in altri "uffici" diversi dal nostro, ma che possono ricevere le nostre modifiche e viceversa se le inviamo o le richiediamo con tali comandi. Simulare quindi l'invio dell'elenco di tutto l'albero delle modifiche del branch principale e dei riferimenti ai branch aperti quando si esegue una push e viceversa quando si esegue una pull;
+
+> Nota per il docente: gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta.
 
 ### Laboratorio Git
 
