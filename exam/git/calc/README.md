@@ -8,7 +8,7 @@ A simple calculator program made in Python.
 * [Exercise](#exercise)
     * [Repository creation (Exercise 1)](#repository-creation-exercise-1)
     * [Create some contents (Exercise 2)](#create-some-contents-exercise-2)
-    * [Tag commits as versions (Exercise 3)](#tag-commits-as-versions-execise-3)
+    * [Tag commits as versions (Exercise 3)](#tag-commits-as-versions-exercise-3)
     * [Add remote and push (Exercise 4)](#add-remote-and-push-exercise-4)
     * [To the infinite and beyond!](#to-the-infinite-and-beyond)
 
@@ -38,7 +38,7 @@ Complete following steps in order. After each step look at the status and unders
 
 Look at the history and understand what is changed.
 
-Repeat those steps until the calc can't execute sum, sub, mul and div operations. You have to create a module with a dedicated function for each operation for this execise.
+Repeat those steps until the calc can't execute sum, sub, mul and div operations. You have to create a module with a dedicated function for each operation for this exercise.
 
 Look at the history and understand what is changed.
 
@@ -46,11 +46,11 @@ Add the output of the history command to a file named *es2.txt*.
 
 > Note: if you commit wrong files or changes, you can erase the last commit. If you have committed other changes after the wrong ones, you have to make a reverter commit.
 
-### Tag commits as versions (Execise 3)
+### Tag commits as versions (Exercise 3)
 
 Look at the history of the repository. Move to the commit where you have implemented the sum function of your calc. This could be the first version of our program for our customers! Let's `tag` that commit as `v1` and add a message with a description of changes you made. Then return to the last commit you've made and tag it as a successive version and add another useful message.
 
-Add the output of the history commad to a file named *es3.txt*.
+Add the output of the history command to a file named *es3.txt*.
 
 ### Add remote and push (Exercise 4)
 
