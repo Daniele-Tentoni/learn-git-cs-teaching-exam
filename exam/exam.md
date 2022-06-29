@@ -259,7 +259,7 @@ Al giorno d'oggi gli standard di qualità dello sviluppo del codice impongono al
 
 In ambito strettamente scolastico, uno studente ha la necessità di ripristinare il proprio esercizio o elaborato ad uno stadio precedente dopo aver svolto una prova o aver continuato per una strada sbagliata, accorgendosi di aver fatto un errore.
 
-Più in generale, chiunque vorrebbe poter aggiungere, modificare, eliminare o manipolare in qualunque modo un prodotto informatico da solo e poter seguire diversi sviluppi differenti, oppure lavorare con un team di persone che hanno bisogno di lavorare sullo stesso prodotto contemporaneamente senza incorrere perennemenete in problemi di aggiornamento della propria versione del prodotto.
+Più in generale, chiunque potrebbe voler aggiungere, modificare, eliminare o manipolare in qualunque modo un prodotto informatico da solo e poter seguire diversi sviluppi differenti, oppure lavorare con un team di persone che hanno bisogno di lavorare sullo stesso prodotto contemporaneamente senza incorrere perennemenete in problemi di aggiornamento della propria versione del prodotto.
 
 Una prima soluzione a tutti questi problemi potremmo averla usando solamente il nostro file system. Facciamo l'esempio del "programmatore solitario":
 
@@ -277,17 +277,23 @@ Si nota quindi come per cambiare poche righe di codice in un progetto in corso p
 
 Per questo vengono in nostro aiuto i sistemi odierni di versionamento del codice. Nel corso del tempo sono state adottate varie tecniche e metodologie per gestire le versioni di un qualunque prodotto informatico, in particolare citiamo due diverse e contrapposte modalità:
 
-- la centralizzata: un unico punto di verità (da qui chiamato per semplicità server) contiene tutto il nostro progetto e ogni persona che vuole contribuire ad esso deve chiedere il permesso di modificarne una parte (creare un nuovo file, modificarne uno esistente, eliminarne...) e una volta terminato, notifica al server di aver completato le modifiche e il server si occupa di salvare l'aggiornamento. Questa modalità nel tempo è stata sempre meno utilizzata in favore della successiva, dato che creava problemi quando più persone volevano modificare la stessa porzione del progetto oppure se la fonte centrale del progetto era inaccessibile, non era possibile lavorare;
+- la centralizzata: viene creato un unico punto di verità (da qui chiamato per semplicità server) che contiene tutto il progetto e ogni persona che vuole contribuire ad esso deve chiedere il permesso di modificarne una parte (creare un nuovo file, modificarne uno esistente, eliminarne...) e una volta terminato, notifica al server di aver completato le modifiche e il server si occupa di salvare l'aggiornamento. Questa modalità nel tempo è stata sempre meno utilizzata in favore della successiva, dato che creava problemi quando più persone volevano modificare la stessa porzione del progetto oppure non era possibile lavorare se la fonte centrale del progetto era inaccessibile;
 
 - la distribuita: ogni sviluppatore possiede l'intera copia del progetto sul quale si sta lavorando e può in ogni momento lavorare su di esso. Quando sarà pronto a pubblicare le proprie implementazioni, allora lui stesso si assume il compito di chiedere agli altri contribuenti di scaricare le modifiche dalla propria versione del progetto o sarà lui ad inviarle agli altri.
 
-Di seguito vedremo solamente la modalità distribuita, ad oggi tra le più utilizzate in ambito scolastico, accademico e lavorativo. Vedremo nel dettaglio lo strumento **Git** per versionare un progetto in ambito locale, sulla propria macchina e gestirne le versioni e lo sviluppo di diverse funzionalità. Vedremo lo strumento **Github** come gestore di progetti versionati salvati in una località remota che ci aiuta anche a gestire la contribuzioni ai progetti dei nostri compagni e colleghi.
+Di seguito vedremo solamente la modalità distribuita, ad oggi tra le più utilizzate in ambito scolastico, accademico e lavorativo. Vedremo nel dettaglio lo strumento **Git** per versionare un progetto in ambito locale, sulla propria macchina e gestirne le versioni e lo sviluppo di diverse funzionalità. Proprio [Stackoverflow](https://stackoverflow.com/) (noto sito per pubblicare domande su argomenti informatici e non e ottenere risposte) ha pubblicato recentemente i risultati del suo sondaggio tra gli sviluppatori fruitori del loro sito, constatando un uso di [Git](https://survey.stackoverflow.co/2022/#section-version-control-version-control-systems) di quasi il 94% degli utenti [^stackoverflow] e di [Github](https://survey.stackoverflow.co/2022/#section-version-control-version-control-platforms) del 87% in ambito personale e del 55% in ambito professionale. Vedremo lo strumento **Github** come gestore di progetti versionati salvati in una località remota che ci aiuta anche a gestire la contribuzioni ai progetti dei nostri compagni e colleghi.
+
+[^stackoverflow]: [Stackoverflow Developer Survey](https://survey.stackoverflow.co/2022/#section-version-control-version-control-systems).
 
 ## Versionamento del codice (unplugged)
 
-> Nota per il docente: Lo scopo di questa attività è di mostrare il versionamento del codice usato da _Git_ usando fogli di carta, forbici e scotch. Tutte le operazioni in seguito proposte potranno essere sperimentate in prima persona dagli studenti in laboratorio tramite i comandi Git scritti tra parentesi, su cui il docente dovrà soffermarsi particolarmente per permettere agli studenti di affrontare con maggior serenità i due esercizi di laboratorio proposti successivamente, associando ogni azione compiuta dagli studenti con il relativo comando.
+> Le citazioni (come questa) in questa sezione sono da considerarsi note per il docente.
+
+> Lo scopo di questa attività è di mostrare il versionamento del codice usato da _Git_ usando fogli di carta, forbici e scotch. Tutte le operazioni in seguito proposte potranno essere sperimentate in prima persona dagli studenti in laboratorio tramite i comandi Git scritti tra parentesi, su cui il docente dovrà soffermarsi particolarmente per permettere agli studenti di affrontare con maggior serenità i due esercizi di laboratorio proposti successivamente, associando ogni azione compiuta dagli studenti con il relativo comando.
 
 Un repository è un insieme di file e di oggetti (o metadati). La similitudine con un archivio inizialmente vuoto e una scrivania piena di fogli sparsi ci permette di rappresentare il concetto di luogo dove conservare degli oggetti seguendo una logica precisa. L'archivista è quindi il nostro strumento di versionamento, a cui affidiamo il compito di intervenire sull'archivio tramite dei nostri comandi. Proporre un foglio con un programma scritto da "archiviare" ci permette di semplificare il concetto rendendolo riproducibile senza l'uso di un elaboratore e ci permette di introdurre i concetti un po' alla volta.
+
+> Eventualmente si possono dividere gli studenti a coppie e fargli svolgere l'esercizio impersonificando a turno il ruolo dello sviluppatore alla scrivania e dell'archivista.
 
 Prendere un foglio e scrivere sopra un programma Python che effettui la divisione di due numeri come nel codice seguente:
 
@@ -305,11 +311,11 @@ result = first / second
 print("The result is " + str(result))
 ```
 
-> Comando `add`: dichiara quali modifiche abbiamo intenzione di versionare.
+- Comando `add`: dichiara quali modifiche abbiamo intenzione di versionare.
 
 Quando il codice è stato scritto, tale foglio è come se fosse ancora sulla scrivania del programmatore. Quando si vuole salvare il lavoro svolto, lo si affida ad un archivista in attesa di essere effettivamente inserito nell'archivio (`add`).
 
-> Comando `commit`: salva le modifiche nel repository e gli assegna un identificativo univoco.
+- Comando `commit`: salva le modifiche nel repository e gli assegna un identificativo univoco.
 
 Quando siamo pronti per archiviarlo, si dice all'archivista di creare il nostro primo metadato (`commit`): scrivere su un altro foglio di carta: la data, l'autore, un commento che spieghi cosa si è svolto e la riga `+ program.py` per indicare che si è aggiunto un file al repository (lasciare riga vuota in cima):
 
@@ -429,7 +435,7 @@ Questo è il contenuto del repository (il nostro archivio) dopo le operazioni ef
 
 In questo modo abbiamo visto come creare una nuova risorsa, aggiungerla al sistema di controllo di versione, preparare una modifica ad essa ed applicarla.
 
-Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
+Non verranno approfondite in questo materiale d'esame, ma similmente possono essere spiegati i concetti di:
 
 - storia del repository (`log`): il foglio di metadati, scritto dal commit meno recente a quello più, è di fatto la storia del nostro repository. Navigarla (`checkout`) vuol dire tagliare/attaccare con lo scotch le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`);
 
@@ -439,13 +445,13 @@ Non verranno approfondite, ma similmente possono essere spiegati i concetti di:
 
 - repository remoto (`push` e `pull`): esistono degli archivi dislocati in altri "uffici" diversi dal nostro, ma che possono ricevere le nostre modifiche e viceversa se le inviamo o le richiediamo con tali comandi. Simulare quindi l'invio dell'elenco di tutto l'albero delle modifiche del branch principale e dei riferimenti ai branch aperti quando si esegue una push e viceversa quando si esegue una pull;
 
-> Nota per il docente: gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta.
+> Nota per il docente: gli studenti possono continuare a sperimentare con aggiunte e modifiche alla risorsa proposta. Valutare di assegnare per compito o approfondimento personale degli studenti lo svolgimento di alcuni livelli dei giochi proposti all'inizio di questo materiale didattico.
 
 ### Laboratorio Git
 
 Vedere l'esercizio proposto nella cartella git.
 
-Proporre tale esercizio supportando gli alunni con maggiori difficoltà nella scelta dei comandi giusti per assolvere i compiti assegnati. Volendo si possono accopiare gli alunni[^pair] durante questo laboratorio. Nel caso in cui si ritenga opportuno, rimuovere il paragrafo inerente al repository remoto (ad esempio nel caso in cui non sia stato trattato a lezione la differenza tra repository locale e remoto e come operare su di essi oppure in assenza di un server git a disposizione).
+Proporre tale esercizio supportando gli alunni con maggiori difficoltà nella scelta dei comandi giusti precedentemente visti a lezione per assolvere i compiti assegnati. Volendo si possono accopiare gli alunni[^pair] durante questo laboratorio. Nel caso in cui si ritenga opportuno, rimuovere il paragrafo inerente al repository remoto (ad esempio nel caso in cui non sia stato trattato a lezione la differenza tra repository locale e remoto e come operare su di essi oppure in assenza di un server git a disposizione).
 
 [^pair]: Prendendo spunto dalla Pair Programming: gli alunni svolgono a coppie gli esercizi proposti per confrontarsi sulle strategie da adottare per risolvere un particolare problema.
 
