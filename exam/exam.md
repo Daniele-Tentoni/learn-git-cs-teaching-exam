@@ -112,7 +112,7 @@ Elencare i contenuti che si suppone siano già stati svolti e appresi dagli stud
 
 Gli studenti devono già essere in possesso delle seguenti competenze _minime_:
 
-1. Manipolare files (creare, modificare, eliminare, spostare, copiare)
+1. Manipolare file (creare, modificare, eliminare, spostare, copiare)
 
 2. Navigare su siti internet (nello specifico github.com per il secondo modulo)
 
@@ -126,7 +126,7 @@ Le esercitazioni preparate per l'esame e fornite con questo materiale didattico,
 
 Le seguenti conoscenze pregresse aiutano gli studenti a capire meglio gli argomenti trattati:
 
-1. Sapere cosa sia un sistema operativo e come vengono memorizzati i files
+1. Sapere cosa sia un sistema operativo e come vengono memorizzati i file
 
 2. Sapere cosa sia un'interfaccia a riga di comando, eseguire comandi e programmi, eseguire programmi con interfaccia grafica
 
@@ -148,7 +148,7 @@ Nel caso si ritenga superfluo o oneroso l'uso dell'interfaccia a riga di comando
 Spiegare brevemente i contenuti. Se si tratta di contenuti banalmente chiari per un informatico, elencarli semplicemente. Se ci sono contenuti particolari o specifici illustrarli brevemente.
 -->
 
-Si vuole introdurre gli studenti all'uso dello strumento Git per versionare il loro codice. Si vuole aiutare a comprendere loro il concetto di repository, branch, commit e staging area, visionare la storia dello stesso e le differenze tra i vari commit e l'attuale contenuto dei files nel repository con la loro controparte attualmente versionata dal repository.
+Si vuole introdurre gli studenti all'uso dello strumento Git per versionare il loro codice. Si vuole aiutare a comprendere loro il concetto di repository, branch, commit e staging area, visionare la storia dello stesso e le differenze tra i vari commit e l'attuale contenuto dei file nel repository con la loro controparte attualmente versionata dal repository.
 
 ## Traguardi e Obiettivi
 
@@ -160,7 +160,7 @@ Al termine delle lezioni nell'area `git` lo studente sa:
 
 - distinguere tra sistemi di versionamento centralizzati o distruibuiti
 - creare repository
-- usare la staging area per gestire le modifiche, l'aggiunta e la rimozione di files
+- usare la staging area per gestire le modifiche, l'aggiunta e la rimozione di file
 - registrare le modifiche nel repository tramite i commit, assegnare un messaggio utile per lo sviluppo del progetto
 - creare un branch, identificare un branch principale, creare branch secondari e spostarsi tra di essi per portare avanti diversi sviluppi del progetto
 - consultare la storia del repository essere consapevole di cosa significhi modificarla e come farlo consapevolmente per poter rimediare a degli errori
@@ -263,7 +263,7 @@ Una prima soluzione a tutti questi problemi potremmo averla usando solamente il 
 
 1. Alla creazione del nuovo progetto, crea una cartella `Prog`
 
-2. Aggiunge files alla cartella `Prog`, come un `main.py`, `dataset.txt` e altri
+2. Aggiunge file alla cartella `Prog`, come un `main.py`, `dataset.txt` e altri
 
 3. Vuole provare a sviluppare la funzionalità di modifica del dataset in base a certi parametri, quindi crea la cartella `Prog_before_params` dove copia il contenuto attuale della cartella `Prog` come backup nel caso in cui dovesse tornare indietro e inizia a modificarne il contenuto
 
@@ -271,7 +271,7 @@ Una prima soluzione a tutti questi problemi potremmo averla usando solamente il 
 
 5. Poi il cliente vuole la funzionalità che lo sviluppatore ha iniziato a fare nel punto 3, ma con qualche modifica, quindi lo sviluppatore deve prelevare le modifiche introdotte, capire come modificarle opportunamente e trasferirle nella cartella del cliente
 
-Si nota quindi come per cambiare poche righe di codice in un progetto in corso per ciascuna funzionalità si devono creare diverse copie di file e cartelle. Volendo poi salvare lo stato del progetto durante le varie fasi della sua vita, creando un _backup_ per la versione 1, uno per la versione 2 e altre per ogni versione prodotta, si capisce che la quantità di risorse duplicate e spazio occupato superi di gran lunga quella iniziale per il progetto in sé. Magari dobbiamo duplicare centinaia di file per delle modifiche a una manciata di files.
+Si nota quindi come per cambiare poche righe di codice in un progetto in corso per ciascuna funzionalità si devono creare diverse copie di file e cartelle. Volendo poi salvare lo stato del progetto durante le varie fasi della sua vita, creando un _backup_ per la versione 1, uno per la versione 2 e altre per ogni versione prodotta, si capisce che la quantità di risorse duplicate e spazio occupato superi di gran lunga quella iniziale per il progetto in sé. Magari dobbiamo duplicare centinaia di file per delle modifiche a una manciata di file.
 
 Per questo vengono in nostro aiuto i sistemi odierni di versionamento del codice. Nel corso del tempo sono state adottate varie tecniche e metodologie per gestire le versioni di un qualunque prodotto informatico, in particolare citiamo due diverse e contrapposte modalità:
 
