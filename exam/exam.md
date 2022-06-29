@@ -199,8 +199,6 @@ Se si parla di didattica della programmazione, fare anche riferimento ai relativ
 
 Vengono proposte due moduli che possono essere suddivisi in una o più lezioni frontali e due attività di laboratorio da proporre agli studenti che dovranno eseguire esercizi singolarmente e in gruppo.
 
-Come metodologia principale si cerca di sfruttare la _Necessity Learning Design_ [@necessity], dove il problema irrisolto è conservare in modo efficente ed efficace gli esercizi svolti dagli alunni (sia per l'insegnante che per gli alunni stessi) durante il corso della loro carriera, tenendo conto dei progressi compiuti e delle correzioni apportate, l'insegnamento è imparare ad usare lo strumento Git per salvare le modifiche ai loro artefatti e il "problema risolto" è effettuare le consegne dei futuri elaborati degli alunni tramite la piattaforma Github o un server Git interno alla rete d'istituto.
-
 Nella prima lezione di teoria dei concetti base di Git si cerca di sfruttare una metodologia _unplugged_, spiegando gli hunk, i commit e i branch con l'ausilio di fogli di carta che vengono scritti, ritagliati, attaccati con lo scotch tra loro.
 
 Nella prima lezione laboratorio viene proposto un _esercizio guidato_ inizialmente, pensato per essere svolto, seguendo il _workflow_ visto a lezione e ripreso nel testo dell'esercizio, abbondantemente al di sotto del tempo previsto per la lezione di laboratorio per permettere agli studenti di sperimentare autonomamente ed approfondire le prove svolte precedentemente. Eventualmente da svolgere in Pair Programming[^pair]. Vedi meglio le indicazioni nella [sezione apposita](#laboratorio-git).
