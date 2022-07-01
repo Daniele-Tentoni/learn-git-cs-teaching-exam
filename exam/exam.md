@@ -447,15 +447,33 @@ Non verranno approfondite in questo materiale d'esame, ma similmente possono ess
 
 ### Laboratorio Git
 
-Vedere l'esercizio proposto nella cartella git.
+Durante un primo momento in laboratorio fare un riassunto dei comandi git visti a lezione, successivamente consegnare agli studenti la cartella `./git/calc` da riconsegnare svolto al termine della lezione secondo le indicazioni contenute all'interno del file `./git/calc/README.md`.
 
 Proporre tale esercizio supportando gli alunni con maggiori difficoltà nella scelta dei comandi giusti precedentemente visti a lezione per assolvere i compiti assegnati. Volendo si possono accopiare gli alunni[^pair] durante questo laboratorio. Nel caso in cui si ritenga opportuno, rimuovere il paragrafo inerente al repository remoto (ad esempio nel caso in cui non sia stato trattato a lezione la differenza tra repository locale e remoto e come operare su di essi oppure in assenza di un server git a disposizione).
+
+> Nota per il docente: viene ipotizzato che durante tutto il percorso scolastico sia stato sempre proposto agli studenti la seguente modalità di consegna: svolgimento esercizio -> produzione output su console -> redirezione dell'output su un file -> consegna del file in una cartella condivisa. Se non si fosse puntato così tanto sull'uso della console, o per qualunque altro motivo la solita modalità di consegna fosse diversa, può essere comunque applicata all'esercizio. Ovviamente, la modalità di consegna a cui bisognerà puntare in questo esercizio (che fa parte dell'esercizio stesso), sarà quella dell'uso del repository git.
 
 [^pair]: Prendendo spunto dalla Pair Programming: gli alunni svolgono a coppie gli esercizi proposti per confrontarsi sulle strategie da adottare per risolvere un particolare problema.
 
 ### Laboratorio Github
 
-Vedere l'esercizio proposto nella cartella github.
+[Github](https://github.com) è un servizio che permette di ospitare file suddividendoli in repository (veri e propri repository git) e collaborare su di essi tramite ovviamente gli strumenti propri di git e anche molti altri prodotti messi a disposizione della piattaforma Github stessa. 
+
+All'inizio del laboratorio occorrerà accertarsi che tutti gli studenti abbiamo creato e verificato il loro account personale.
+
+> Nota per il docente: è possibile usare una mail istituzionale (se l'istituto ne è provvisto) per generare gli account personali degli studenti, dato che successivamente è possibile cambiarla con una mail personale per ogni studente per poter usare tale account anche in futuro.
+
+Successivamente esplorare insieme agli studenti i prodotti che verranno utilizzati durante il laboratorio:
+
+* i [Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories): creare un repository di prova e mostrare agli studenti la presenza, l'importanza dei file README (mostrare come scrivere dei bei documenti README con l'uso del Markdown o lasciare questo argomento per una lezione successiva o come approfondimento autonomo) e come inserire una breve descrizione del repository in esso;
+
+* le [Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues): mostrare la creazione di una semplice issue come segnalazione di un problema nel repository, richiesta di chiarimento o suggerimento di una nuova funzionalità, l'inserimento del titolo e di una descrizione significativa per essa, l'uso della label per l'organizzazione dei vari tipi di issue e la menzione degli altri membri del team;
+
+* le [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbr. pr): mostrare la creazione di una semplice pull request come richiesta di integrazione nel repository o in un determinato branch dei cambiamenti svolti per migliorarlo, l'inserimento anche in essa di un titolo e una descrizione significativa per essa, l'uso delle label per l'organizzazione dei vari tipi di pull requests, la menzione degli altri membri del team e il collegamento della pr alla issue che risolve o che esemplifica.
+
+Il docente prima della lezione dovrà creare un repository sul proprio account con il contenuto della cartella `./github/phonebook` chiamato *phonebook-classe-aa* in modo da poterlo cercare con maggiore facilità, senza fargli generare file README o .gitignore o LICENSE. Il repository in questo caso conterrà già al suo interno sia il file `test.sh` che tramite `expect` può aiutarci a verificare o meno la correttezza funzionale del software sviluppato dagli studenti che il file `.github/workflow/test.yml` che eseguirà il suddetto script ad ogni pr verso il branch *main* del repository (vedesi [Continuous Integration](https://it.wikipedia.org/wiki/Integrazione_continua) e [Github Actions](https://github.com/features/actions)). Se non ci si volesse avvalere di queste funzionalità, basterebbe rimuovere i suddetti file dal repository.
+
+Successivamente, dividere gli studenti in gruppi di 3/4 e sorteggiare uno di essi perché esegua un fork del repository del professore. Il gruppo userà quindi tale repository per svolgere l'esercitazione. Gli studenti potranno utilizzare le issue sul repository principale per chiedere spiegazioni al docente e per segnalare il completamento dell'esercitazione.
 
 Le indicazioni sono le stesse del precedente esercizio. In questo caso l'esercizio è molto corposo, constringendo molti studenti a dover finire a casa, in altra sede o durante una lezione successiva. Lo sviluppo sullo stesso progetto da remoto è un fondamentale bisogno che viene soddisfatto e difficoltà che viene semplificata proprio dallo strumento in questione. Per questo potrebbe essere anche forzato il fatto di dover finire a casa l'esercizio per poter mettere alla prova gli alunni anche sotto questo aspetto.
 
@@ -463,17 +481,17 @@ Le indicazioni sono le stesse del precedente esercizio. In questo caso l'eserciz
 
 Git e la maggior parte dei programmi, servizi, utility e altri prodotti informatici sopracitati vengono rilasciati con licenze aperte e libere.
 
-Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che _aprirlo_ potrebbe danneggiare il loro business). Un'altra alternativa maggiormente open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati _open core_) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di Continuous Integration integrato come le Github Actions o Gitlab CI (per eseguire codice ad ogni evento sul repository, come ad esempio eseguire dei controlli e la valutazione degli esercizi degli studenti), per questo deve essere usato un servizio esterno.
+Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che _aprirlo_ potrebbe danneggiare il loro business). Un'altra alternativa maggiormente open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati _open core_) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di Continuous Integration integrato come le Github Pages o [Gitlab CI](https://docs.gitlab.com/ee/ci/) (per eseguire codice ad ogni evento sul repository, come ad esempio eseguire dei controlli e la valutazione degli esercizi degli studenti), per questo deve essere usato un servizio esterno.
 
 Dopo queste lezioni, gli studenti possono essere pronti ad ulteriori conseguenze degli argomenti trattati, come ad esempio:
 
-- pratiche DevOps
+- pratiche [DevOps](https://it.wikipedia.org/wiki/DevOps)
 
 - contribuzione a progetti Open Source
 
 - esplorazione di ulteriori servizi che permettano hosting di repository (alcuni proposti sopra)
 
-- uso di Github Pages (o i concorrenti Gitlab Pages, Gitea non possiede anche in questo caso un servizio integrato, quindi bisognerebbe adottare una soluzione terza) per la pubblicazione di siti web statici o applicazioni web lato client (con l'uso di JQuery o i più modermi Vue, React o Angular)
+- uso di [Github Pages](https://pages.github.com/) (o i concorrenti [Gitlab Pages](https://docs.gitlab.com/ee/user/project/pages/), Gitea non possiede anche in questo caso un servizio integrato, quindi bisognerebbe adottare una soluzione terza) per la pubblicazione di siti web statici o applicazioni web lato client (con l'uso di JQuery o i più modermi Vue, React o Angular)
 
 # Bibliografia
 
