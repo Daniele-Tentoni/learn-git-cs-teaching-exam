@@ -6,12 +6,10 @@ SPDX-License-Identifier: CC0-1.0
 -->
 
 ---
-
 title: Lezione Tool Git
 author: Daniele Tentoni
 date: 17/05/2022
 bibliography: exam/exam.bib
-
 ---
 
 Esame di Didattica dell'Informatica, A.A. 2021/2022
@@ -26,9 +24,19 @@ Se questa relazione è stata già consegnata in precedenza, indicare qui
 * risposte a eventuali domande/commenti fatti dai docenti sulle versioni precedenti
 -->
 
-## Post esame 21/06
+## [Post esame 21/06](https://github.com/Daniele-Tentoni/learn-git-cs-teaching-exam/pull/4)
 
 - incluso riferimento a gioco oh-my-git
+
+- spiega meglio funzionamento del commit hash
+
+- aggiunge dati statistici sull'uso attuale dei tool spiegati
+
+- rimuove riferimento inappropriato al Necessity Learning Design
+
+- aggiunge riferimenti ai comandi studiati a lezione negli esercizi di laboratorio
+
+- aggiunge informazioni per gli insegnanti sulla conduzione delle esercitazioni
 
 # Inquadramento del lavoro
 
