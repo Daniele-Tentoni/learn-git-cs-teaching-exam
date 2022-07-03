@@ -69,8 +69,10 @@ Features that will be available:
 
 Collaborate with your teammates to develop base features of this phonebook:
 
-1. Create an issue for each feature to develop, discuss in the issue comments about best methods and implementations of that feature and assign that issue to the teammates who is account for it
-2. When all work is divided among all mates, fork the main the repo in your account and start to work
-3. Submit a pull request when you are ready and discuss with your teammates about the correctness of your implementation
+1. Create an issue for each feature to develop, discuss in the issue comments about best methods and implementations of that feature and assign that issue to the teammate who is account for it
+2. When all work is divided among all members, fork the main the repo in your account and start to work
+3. Submit a pull request when you are ready and discuss with your team about the correctness of your implementation
 
 Your evaluation will count both programming and collaborating skills.
+
+When finished, submit an issue on teacher repository to notify that.
