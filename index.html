@@ -139,6 +139,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <div class="well toc">
 
         <ul>
+        <li><a href="#changelog-se-necessario"
+        id="toc-changelog-se-necessario">Changelog (se necessario)</a>
+        <ul>
+        <li><a href="#post-esame-2106"
+        id="toc-post-esame-2106"><span>Post esame 21/06</span></a></li>
+        </ul></li>
         <li><a href="#inquadramento-del-lavoro"
         id="toc-inquadramento-del-lavoro">Inquadramento del lavoro</a>
         <ul>
@@ -195,15 +201,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             SPDX-License-Identifier: CC0-1.0
             -->
             <p>Esame di Didattica dell’Informatica, A.A. 2021/2022</p>
+            <h1 id="changelog-se-necessario">Changelog (se
+            necessario)</h1>
             <!--
-            # Changelog (se necessario)
-
             Se questa relazione è stata già consegnata in precedenza, indicare qui
 
             * i cambiamenti più sificativi
             * dove trovare un eventuale diff (se ritenuto necessario)
             * risposte a eventuali domande/commenti fatti dai docenti sulle versioni precedenti
             -->
+            <h2 id="post-esame-2106"><a
+            href="https://github.com/Daniele-Tentoni/learn-git-cs-teaching-exam/pull/4">Post
+            esame 21/06</a></h2>
+            <ul>
+            <li><p>incluso riferimento a gioco oh-my-git</p></li>
+            <li><p>spiega meglio funzionamento del commit hash</p></li>
+            <li><p>aggiunge dati statistici sull’uso attuale dei tool
+            spiegati</p></li>
+            <li><p>rimuove riferimento inappropriato al Necessity
+            Learning Design</p></li>
+            <li><p>aggiunge riferimenti ai comandi studiati a lezione
+            negli esercizi di laboratorio</p></li>
+            <li><p>aggiunge informazioni per gli insegnanti sulla
+            conduzione delle esercitazioni</p></li>
+            </ul>
             <h1 id="inquadramento-del-lavoro">Inquadramento del
             lavoro</h1>
             <h2 id="livello-di-scuola-classei-indirizzo">Livello di
@@ -302,6 +323,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             in classe per gli studenti;
             </dd>
             </dl></li>
+            <li><p><a
+            href="https://ohmygit.org/">https://ohmygit.org/</a>: Altro
+            gioco gratuito e open source scaricabile per quasi tutte le
+            piattaforme desktop per imparare i comandi, diversamente dal
+            precedente non offre agli studenti proprio una console,
+            offrendo una diversa gamification;</p></li>
             <li><dl>
             <dt><a
             href="https://www.atlassian.com/git">https://www.atlassian.com/git</a></dt>
@@ -383,7 +410,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <p>Gli studenti devono già essere in possesso delle seguenti
             competenze <em>minime</em>:</p>
             <ol type="1">
-            <li><p>Manipolare files (creare, modificare, eliminare,
+            <li><p>Manipolare file (creare, modificare, eliminare,
             spostare, copiare)</p></li>
             <li><p>Navigare su siti internet (nello specifico github.com
             per il secondo modulo)</p></li>
@@ -408,7 +435,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             capire meglio gli argomenti trattati:</p>
             <ol type="1">
             <li><p>Sapere cosa sia un sistema operativo e come vengono
-            memorizzati i files</p></li>
+            memorizzati i file</p></li>
             <li><p>Sapere cosa sia un’interfaccia a riga di comando,
             eseguire comandi e programmi, eseguire programmi con
             interfaccia grafica</p></li>
@@ -442,7 +469,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             Git per versionare il loro codice. Si vuole aiutare a
             comprendere loro il concetto di repository, branch, commit e
             staging area, visionare la storia dello stesso e le
-            differenze tra i vari commit e l’attuale contenuto dei files
+            differenze tra i vari commit e l’attuale contenuto dei file
             nel repository con la loro controparte attualmente
             versionata dal repository.</p>
             <h2 id="traguardi-e-obiettivi">Traguardi e Obiettivi</h2>
@@ -450,28 +477,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             Quali traguardi e obiettivi di apprendimento si vuole raggiungere con le attività proposte?
             -->
             <p>Al termine delle lezioni nell’area <code>git</code> lo
-            studente sa: * distinguere tra sistemi di versionamento
-            centralizzati o distruibuiti * creare repository * usare la
-            staging area per gestire le modifiche, l’aggiunta e la
-            rimozione di files * registrare le modifiche nel repository
-            tramite i commit, assegnare un messaggio utile per lo
-            sviluppo del progetto * creare un branch, identificare un
-            branch principale, creare branch secondari e spostarsi tra
-            di essi per portare avanti diversi sviluppi del progetto *
-            consultare la storia del repository essere consapevole di
-            cosa significhi modificarla e come farlo consapevolmente per
-            poter rimediare a degli errori * gestire i conflitti delle
-            modifiche quando si manifestano</p>
+            studente sa:</p>
+            <ul>
+            <li>distinguere tra sistemi di versionamento centralizzati o
+            distruibuiti</li>
+            <li>creare repository</li>
+            <li>usare la staging area per gestire le modifiche,
+            l’aggiunta e la rimozione di file</li>
+            <li>registrare le modifiche nel repository tramite i commit,
+            assegnare un messaggio utile per lo sviluppo del
+            progetto</li>
+            <li>creare un branch, identificare un branch principale,
+            creare branch secondari e spostarsi tra di essi per portare
+            avanti diversi sviluppi del progetto</li>
+            <li>consultare la storia del repository essere consapevole
+            di cosa significhi modificarla e come farlo consapevolmente
+            per poter rimediare a degli errori</li>
+            <li>gestire i conflitti delle modifiche quando si
+            manifestano</li>
+            </ul>
             <p>Al termine delle lezioni nell’area <code>github</code> lo
-            studente sa: * distinguere i concetti di repository locale,
-            remoto, versioning centralizzato e distribuito * creare un
-            repository remoto, collegarlo al suo repository in locale,
-            eseguire download degli aggiornamenti dal repository remote
-            e upload dal repository locale * usare le issue come
-            richiesta di chiarimenti, segnalazione di un problema o
-            suggerimento di una soluzione * usare le pull request come
-            offerta di aggiunta di una nuova funzionalità e di una
-            soluzione ad un problema riscontrato</p>
+            studente sa:</p>
+            <ul>
+            <li>distinguere i concetti di repository locale, remoto,
+            versioning centralizzato e distribuito</li>
+            <li>creare un repository remoto, collegarlo al suo
+            repository in locale, eseguire download degli aggiornamenti
+            dal repository remote e upload dal repository locale</li>
+            <li>usare le issue come richiesta di chiarimenti,
+            segnalazione di un problema o suggerimento di una
+            soluzione</li>
+            <li>usare le pull request come offerta di aggiunta di una
+            nuova funzionalità e di una soluzione ad un problema
+            riscontrato</li>
+            </ul>
             <p>Al termine di tutte le lezioni lo studente ha le
             competenze di gestire un progetto sofware al quale possano
             contribuire più persone, sia come spettatore (consultandolo
@@ -482,10 +521,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             le relazioni con tutti gli attori del progetto).</p>
             <table>
             <colgroup>
-            <col style="width: 25%" />
-            <col style="width: 25%" />
-            <col style="width: 25%" />
-            <col style="width: 25%" />
+            <col style="width: 4%" />
+            <col style="width: 29%" />
+            <col style="width: 26%" />
+            <col style="width: 39%" />
             </colgroup>
             <thead>
             <tr class="header">
@@ -578,24 +617,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             in una o più lezioni frontali e due attività di laboratorio
             da proporre agli studenti che dovranno eseguire esercizi
             singolarmente e in gruppo.</p>
-            <p>Come metodologia principale si cerca di sfruttare la
-            <em>Necessity Learning Design</em> <span class="citation"
-            data-cites="necessity">(<span>“Sentire La Necessity Per
-            Imparare a Programmare”</span> n.d.)</span>, dove il
-            problema irrisolto è conservare in modo efficente ed
-            efficace gli esercizi svolti dagli alunni (sia per
-            l’insegnante che per gli alunni stessi) durante il corso
-            della loro carriera, tenendo conto dei progressi compiuti e
-            delle correzioni apportate, l’insegnamento è imparare ad
-            usare lo strumento Git per salvare le modifiche ai loro
-            artefatti e il “problema risolto” è effettuare le consegne
-            dei futuri elaborati degli alunni tramite la piattaforma
-            Github o un server Git interno alla rete d’istituto.</p>
             <p>Nella prima lezione di teoria dei concetti base di Git si
             cerca di sfruttare una metodologia <em>unplugged</em>,
             spiegando gli hunk, i commit e i branch con l’ausilio di
-            fogli di carta che vengono scritti, ritagliati, scotchati
-            tra loro.</p>
+            fogli di carta che vengono scritti, ritagliati, attaccati
+            con lo scotch tra loro.</p>
             <p>Nella prima lezione laboratorio viene proposto un
             <em>esercizio guidato</em> inizialmente, pensato per essere
             svolto, seguendo il <em>workflow</em> visto a lezione e
@@ -695,7 +721,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             ad uno stadio precedente dopo aver svolto una prova o aver
             continuato per una strada sbagliata, accorgendosi di aver
             fatto un errore.</p>
-            <p>Più in generale, chiunque vorrebbe poter aggiungere,
+            <p>Più in generale, chiunque potrebbe voler aggiungere,
             modificare, eliminare o manipolare in qualunque modo un
             prodotto informatico da solo e poter seguire diversi
             sviluppi differenti, oppure lavorare con un team di persone
@@ -708,7 +734,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ol type="1">
             <li><p>Alla creazione del nuovo progetto, crea una cartella
             <code>Prog</code></p></li>
-            <li><p>Aggiunge files alla cartella <code>Prog</code>, come
+            <li><p>Aggiunge file alla cartella <code>Prog</code>, come
             un <code>main.py</code>, <code>dataset.txt</code> e
             altri</p></li>
             <li><p>Vuole provare a sviluppare la funzionalità di
@@ -738,25 +764,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             che la quantità di risorse duplicate e spazio occupato
             superi di gran lunga quella iniziale per il progetto in sé.
             Magari dobbiamo duplicare centinaia di file per delle
-            modifiche a una manciata di files.</p>
+            modifiche a una manciata di file.</p>
             <p>Per questo vengono in nostro aiuto i sistemi odierni di
             versionamento del codice. Nel corso del tempo sono state
             adottate varie tecniche e metodologie per gestire le
             versioni di un qualunque prodotto informatico, in
             particolare citiamo due diverse e contrapposte modalità:</p>
             <ul>
-            <li><p>la centralizzata: un unico punto di verità (da qui
-            chiamato per semplicità server) contiene tutto il nostro
-            progetto e ogni persona che vuole contribuire ad esso deve
-            chiedere il permesso di modificarne una parte (creare un
-            nuovo file, modificarne uno esistente, eliminarne…) e una
-            volta terminato, notifica al server di aver completato le
-            modifiche e il server si occupa di salvare l’aggiornamento.
-            Questa modalità nel tempo è stata sempre meno utilizzata in
-            favore della successiva, dato che creava problemi quando più
-            persone volevano modificare la stessa porzione del progetto
-            oppure se la fonte centrale del progetto era inaccessibile,
-            non era possibile lavorare;</p></li>
+            <li><p>la centralizzata: viene creato un unico punto di
+            verità (da qui chiamato per semplicità server) che contiene
+            tutto il progetto e ogni persona che vuole contribuire ad
+            esso deve chiedere il permesso di modificarne una parte
+            (creare un nuovo file, modificarne uno esistente,
+            eliminarne…) e una volta terminato, notifica al server di
+            aver completato le modifiche e il server si occupa di
+            salvare l’aggiornamento. Questa modalità nel tempo è stata
+            sempre meno utilizzata in favore della successiva, dato che
+            creava problemi quando più persone volevano modificare la
+            stessa porzione del progetto oppure non era possibile
+            lavorare se la fonte centrale del progetto era
+            inaccessibile;</p></li>
             <li><p>la distribuita: ogni sviluppatore possiede l’intera
             copia del progetto sul quale si sta lavorando e può in ogni
             momento lavorare su di esso. Quando sarà pronto a pubblicare
@@ -770,26 +797,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             e lavorativo. Vedremo nel dettaglio lo strumento
             <strong>Git</strong> per versionare un progetto in ambito
             locale, sulla propria macchina e gestirne le versioni e lo
-            sviluppo di diverse funzionalità. Vedremo lo strumento
-            <strong>Github</strong> come gestore di progetti versionati
-            salvati in una località remota che ci aiuta anche a gestire
-            la contribuzioni ai progetti dei nostri compagni e
-            colleghi.</p>
+            sviluppo di diverse funzionalità. Proprio <a
+            href="https://stackoverflow.com/">Stackoverflow</a> (noto
+            sito per pubblicare domande su argomenti informatici e non e
+            ottenere risposte) ha pubblicato recentemente i risultati
+            del suo sondaggio tra gli sviluppatori fruitori del loro
+            sito, constatando un uso di <a
+            href="https://survey.stackoverflow.co/2022/#section-version-control-version-control-systems">Git</a>
+            di quasi il 94% degli utenti <a href="#fn5"
+            class="footnote-ref" id="fnref5"
+            role="doc-noteref"><sup>5</sup></a> e di <a
+            href="https://survey.stackoverflow.co/2022/#section-version-control-version-control-platforms">Github</a>
+            del 87% in ambito personale e del 55% in ambito
+            professionale. Vedremo lo strumento <strong>Github</strong>
+            come gestore di progetti versionati salvati in una località
+            remota che ci aiuta anche a gestire la contribuzioni ai
+            progetti dei nostri compagni e colleghi.</p>
             <h2 id="versionamento-del-codice-unplugged">Versionamento
             del codice (unplugged)</h2>
-            <p>Dimostrazione della modalità di versionamento del codice
-            proposta da <em>Git</em> usando fogli di carta, forbici e
-            scotch. Tutte le operazioni in seguito proposte potranno
-            essere riviste in laboratorio tramite comandi Git scritti
-            tra parentesi.</p>
+            <blockquote>
+            <p>Le citazioni (come questa) in questa sezione sono da
+            considerarsi note per il docente.</p>
+            </blockquote>
+            <blockquote>
+            <p>Lo scopo di questa attività è di mostrare il
+            versionamento del codice usato da <em>Git</em> usando fogli
+            di carta, forbici e scotch. Tutte le operazioni in seguito
+            proposte potranno essere sperimentate in prima persona dagli
+            studenti in laboratorio tramite i comandi Git scritti tra
+            parentesi, su cui il docente dovrà soffermarsi
+            particolarmente per permettere agli studenti di affrontare
+            con maggior serenità i due esercizi di laboratorio proposti
+            successivamente, associando ogni azione compiuta dagli
+            studenti con il relativo comando.</p>
+            </blockquote>
             <p>Un repository è un insieme di file e di oggetti (o
             metadati). La similitudine con un archivio inizialmente
             vuoto e una scrivania piena di fogli sparsi ci permette di
-            immaginare il concetto. Proporre un foglio con un programma
-            scritto da “archiviare” ci permette di semplificare il
-            concetto rendendolo riproducibile senza l’uso di un
-            elaboratore e ci permette di introdurre i concetti un po’
-            alla volta.</p>
+            rappresentare il concetto di luogo dove conservare degli
+            oggetti seguendo una logica precisa. L’archivista è quindi
+            il nostro strumento di versionamento, a cui affidiamo il
+            compito di intervenire sull’archivio tramite dei nostri
+            comandi. Proporre un foglio con un programma scritto da
+            “archiviare” ci permette di semplificare il concetto
+            rendendolo riproducibile senza l’uso di un elaboratore e ci
+            permette di introdurre i concetti un po’ alla volta.</p>
+            <blockquote>
+            <p>Eventualmente si possono dividere gli studenti a coppie e
+            fargli svolgere l’esercizio impersonificando a turno il
+            ruolo dello sviluppatore alla scrivania e
+            dell’archivista.</p>
+            </blockquote>
             <p>Prendere un foglio e scrivere sopra un programma Python
             che effettui la divisione di due numeri come nel codice
             seguente:</p>
@@ -805,36 +863,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> first <span class="op">/</span> second</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;The result is &quot;</span> <span class="op">+</span> <span class="bu">str</span>(result))</span></code></pre></div>
+            <ul>
+            <li>Comando <code>add</code>: dichiara quali modifiche
+            abbiamo intenzione di versionare.</li>
+            </ul>
             <p>Quando il codice è stato scritto, tale foglio è come se
             fosse ancora sulla scrivania del programmatore. Quando si
             vuole salvare il lavoro svolto, lo si affida ad un
             archivista in attesa di essere effettivamente inserito
-            nell’archivio (<code>add</code>). Quando siamo pronti per
-            archiviarlo, si dice all’archivista di creare il nostro
-            primo metadato: scrivere su un altro foglio di carta un
-            codice univoco, la data, l’autore, un commento che spieghi
-            cosa si è svolto e la riga <code>+ program.py</code> per
-            indicare che si è aggiunto un file al repository:</p>
-            <pre><code>commit a8tnf
+            nell’archivio (<code>add</code>).</p>
+            <ul>
+            <li>Comando <code>commit</code>: salva le modifiche nel
+            repository e gli assegna un identificativo univoco.</li>
+            </ul>
+            <p>Quando siamo pronti per archiviarlo, si dice
+            all’archivista di creare il nostro primo metadato
+            (<code>commit</code>): scrivere su un altro foglio di carta:
+            la data, l’autore, un commento che spieghi cosa si è svolto
+            e la riga <code>+ program.py</code> per indicare che si è
+            aggiunto un file al repository (lasciare riga vuota in
+            cima):</p>
+            <pre><code># Riga vuota
 Author: Daniele Tentoni
 Date: 2022-06-07 12:48
 
     Aggiunta divisione tra numeri.
 
     + program.py</code></pre>
-            <p>Quindi affianco di ogni riga si scrive il relativo codice
-            (<code>commit</code>). Per semplicità vengono mostrate
-            solamente le prime righe:</p>
-            <pre><code>&quot;&quot;&quot;                                         a8tnf
-Make the division between two numbers.      a8tnf
-&quot;&quot;&quot;                                         a8tnf</code></pre>
-            <p>A questo punto, simulare la modifica di tale codice,
-            aggiungendo ad esempio il seguente codice per il controllo
-            dell’input sul divisore:</p>
-            <div class="sourceCode" id="cb4"><pre
-            class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> second <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Second param cannot be 0&quot;</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    exit()</span></code></pre></div>
+            <p>L’id del commit serve per identificare univocamente
+            quella modifica all’interno di tutto il repository. Ogni
+            informazione scritta nell’oggetto soprastante oltre al
+            codice del commit serve a produrre di fatto il codice id del
+            commit stesso. Nell’esempio, l’autore del commit, la data di
+            esecuzione e il contenuto della modifica. Tutte queste
+            informazioni vengono date in input ad una funzione che si
+            occupa di generare un codice che sia univoco all’interno del
+            repository. Più avanti vedremo come in un oggetto commit
+            vengono inserite molte più informazioni, tutte necessarie
+            quindi alla produzione dell’id. Per adesso quindi
+            (ipotizzando di aver sottoposto ad una funzione di hash
+            l’intero contenuto del nostro metadato) scegliamo un codice
+            casuale di 8 caratteri e lo scriviamo in cima al nostro
+            metadato:</p>
+            <pre><code>commit 10vn3u7d
+Author: ...</code></pre>
+            <p>Quindi affianco di ogni riga si scrive il relativo
+            codice. Per semplicità vengono mostrate solamente le prime
+            righe:</p>
+            <pre><code>&quot;&quot;&quot;                                         10vn3u7d
+Make the division between two numbers.      10vn3u7d
+&quot;&quot;&quot;                                         10vn3u7d</code></pre>
+            <p>In questo modo abbiamo visto come vengano eseguiti i
+            comandi <code>add</code> e <code>commit</code>.</p>
+            <p>A questo punto, simulare la modifica del codice del
+            programma, aggiungendo ad esempio il seguente codice per il
+            controllo dell’input sul divisore:</p>
+            <div class="sourceCode" id="cb5"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> second <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Second param cannot be 0&quot;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    exit()</span></code></pre></div>
             <p>Scriviamo quindi il codice precedente su due strisce di
             carta ritagliate da un altro foglio. In questo momento
             stiamo ancora lavorando sulla scrivania del programmatore.
@@ -870,88 +957,201 @@ result = first / second</code></pre>
             modifiche svolte (<code>commit</code>). Scriviamo sul foglio
             dei metadati le seguenti righe e le striscie di carta
             rimanenti:</p>
-            <pre><code>commit gehe
-Author: Daniele Tentoni
+            <pre><code>Author: Daniele Tentoni
 Date: 2022-06-07 13:48
 
     Aggiunta divisione tra numeri.
 
     &lt;-----------&gt; Incolliamo aggiunte &lt;-----------&gt;
     &lt;-----------&gt; Incolliamo rimozioni &lt;-----------&gt;</code></pre>
+            <p>Ipotizziamo di generare il codice univoco
+            <code>o03j56d3</code> e lo scriviamo nel commit:</p>
+            <pre><code>commit o03j56d3
+Author: ...</code></pre>
             <p>Poi scriviamo di lato il codice del nuovo commit
             (<code>commit</code> delle ultime modifiche effettuate),
             così:</p>
             <pre><code>...
 
-if second == 0:                             gehe
-    print(&quot;Second param cannot be 0&quot;)       gehe
-    exit()                                  gehe
+if second == 0:                             o03j56d3
+    print(&quot;Second param cannot be 0&quot;)       o03j56d3
+    exit()                                  o03j56d3
 
 ...</code></pre>
             <p>Il risultato finale visibile sarà quindi il seguente:</p>
-            <pre><code>&quot;&quot;&quot;                                         a8tnf
-Make the division between two numbers.      a8tnf
-&quot;&quot;&quot;                                         a8tnf
+            <pre><code>&quot;&quot;&quot;                                         10vn3u7d
+Make the division between two numbers.      10vn3u7d
+&quot;&quot;&quot;                                         10vn3u7d
 
-first = float(input(&quot;First param:&quot;))        a8tnf
+first = float(input(&quot;First param:&quot;))        10vn3u7d
 
-second = float(input(&quot;Second param:&quot;))      a8tnf
+second = float(input(&quot;Second param:&quot;))      10vn3u7d
 
-if second == 0:                             gehe
-    print(&quot;Second param cannot be 0&quot;)       gehe
-    exit()                                  gehe
+if second == 0:                             o03j56d3
+    print(&quot;Second param cannot be 0&quot;)       o03j56d3
+    exit()                                  o03j56d3
 
-result = first / second                     a8tnf
+result = first / second                     10vn3u7d
 
-print(&quot;The result is &quot; + str(result))       a8tnf</code></pre>
+print(&quot;The result is &quot; + str(result))       10vn3u7d</code></pre>
             <p>Questo è il contenuto del repository (il nostro archivio)
             dopo le operazioni effettuate.</p>
             <p>In questo modo abbiamo visto come creare una nuova
             risorsa, aggiungerla al sistema di controllo di versione,
             preparare una modifica ad essa ed applicarla.</p>
-            <p>Non verranno approfondite, ma similmente possono essere
-            spiegati i concetti di:</p>
+            <p>Non verranno approfondite in questo materiale d’esame, ma
+            similmente possono essere spiegati i concetti di:</p>
             <ul>
-            <li><p>storia del repository (<code>log</code>): la storia
-            del commit è quella scritta sul foglio dei metadati.
-            Navigarla vuol dire tagliare/scotchare le striscie dal
-            foglio dei metadati nel foglio del nostro programma come
-            abbiamo fatto fino adesso fino al commit nella storia che si
-            vuole navigare. Si introduce l’uso di un post-it per marcare
-            il commit corrente (<code>HEAD</code>).</p></li>
+            <li><p>storia del repository (<code>log</code>): il foglio
+            di metadati, scritto dal commit meno recente a quello più, è
+            di fatto la storia del nostro repository. Navigarla
+            (<code>checkout</code>) vuol dire tagliare/attaccare con lo
+            scotch le striscie dal foglio dei metadati nel foglio del
+            nostro programma come abbiamo fatto fino adesso fino al
+            commit nella storia che si vuole navigare. Si introduce
+            l’uso di un post-it per marcare il commit corrente
+            (<code>HEAD</code>);</p></li>
             <li><p>rami (<code>branches</code>): per creare un nuovo
             branch si scrive il suo nome su una etichetta e la si pone
             sul commit a cui punta la HEAD del branch. Nel foglio dei
             metadati ci si annota per ogni commit anche i genitori di
-            esso. Si può far ricostruire agli studenti su un altro
-            foglio di carta l’albero del repository</p></li>
+            esso (questo è un altro dato che contribuisce a calcolare
+            l’hash del commit). Si può far ricostruire agli studenti su
+            un altro foglio di carta l’albero del repository;</p></li>
             <li><p>tags (<code>tag</code>): creare un altro foglio di
             metadati dove ci si annotano i tag con i relativi commit e
-            messaggi</p></li>
+            messaggi;</p></li>
+            <li><p>repository remoto (<code>push</code> e
+            <code>pull</code>): esistono degli archivi dislocati in
+            altri “uffici” diversi dal nostro, ma che possono ricevere
+            le nostre modifiche e viceversa se le inviamo o le
+            richiediamo con tali comandi. Simulare quindi l’invio
+            dell’elenco di tutto l’albero delle modifiche del branch
+            principale e dei riferimenti ai branch aperti quando si
+            esegue una push e viceversa quando si esegue una
+            pull;</p></li>
             </ul>
-            <p><em>Gli studenti possono continuare a sperimentare con
-            aggiunte e modifiche alla risorsa proposta.</em></p>
+            <blockquote>
+            <p>Nota per il docente: gli studenti possono continuare a
+            sperimentare con aggiunte e modifiche alla risorsa proposta.
+            Valutare di assegnare per compito o approfondimento
+            personale degli studenti lo svolgimento di alcuni livelli
+            dei giochi proposti all’inizio di questo materiale
+            didattico.</p>
+            </blockquote>
             <h3 id="laboratorio-git">Laboratorio Git</h3>
-            <p>Vedere l’esercizio proposto nella cartella git.</p>
+            <p>Durante un primo momento in laboratorio fare un riassunto
+            dei comandi git visti a lezione, successivamente consegnare
+            agli studenti la cartella <code>./git/calc</code> da
+            riconsegnare svolto al termine della lezione secondo le
+            indicazioni contenute all’interno del file
+            <code>./git/calc/README.md</code>.</p>
             <p>Proporre tale esercizio supportando gli alunni con
-            maggiori difficoltà nella scelta dei comandi giusti per
-            assolvere i compiti assegnati. Volendo si possono accopiare
-            gli alunni<a href="#fn5" class="footnote-ref" id="fnref5"
-            role="doc-noteref"><sup>5</sup></a> durante questo
+            maggiori difficoltà nella scelta dei comandi giusti
+            precedentemente visti a lezione per assolvere i compiti
+            assegnati. Volendo si possono accopiare gli alunni<a
+            href="#fn6" class="footnote-ref" id="fnref6"
+            role="doc-noteref"><sup>6</sup></a> durante questo
             laboratorio. Nel caso in cui si ritenga opportuno, rimuovere
             il paragrafo inerente al repository remoto (ad esempio nel
             caso in cui non sia stato trattato a lezione la differenza
             tra repository locale e remoto e come operare su di essi
             oppure in assenza di un server git a disposizione).</p>
+            <blockquote>
+            <p>Nota per il docente: viene ipotizzato che durante tutto
+            il percorso scolastico sia stato sempre proposto agli
+            studenti la seguente modalità di consegna: svolgimento
+            esercizio -&gt; produzione output su console -&gt;
+            redirezione dell’output su un file -&gt; consegna del file
+            in una cartella condivisa. Se non si fosse puntato così
+            tanto sull’uso della console, o per qualunque altro motivo
+            la solita modalità di consegna fosse diversa, può essere
+            comunque applicata all’esercizio. Ovviamente, la modalità di
+            consegna a cui bisognerà puntare in questo esercizio (che fa
+            parte dell’esercizio stesso), sarà quella dell’uso del
+            repository git.</p>
+            </blockquote>
             <h3 id="laboratorio-github">Laboratorio Github</h3>
-            <p>Vedere l’esercizio proposto nella cartella github.</p>
+            <p><a href="https://github.com">Github</a> è un servizio che
+            permette di ospitare file suddividendoli in repository (veri
+            e propri repository git) e collaborare su di essi tramite
+            ovviamente gli strumenti propri di git e anche molti altri
+            prodotti messi a disposizione della piattaforma Github
+            stessa.</p>
+            <p>All’inizio del laboratorio occorrerà accertarsi che tutti
+            gli studenti abbiamo creato e verificato il loro account
+            personale.</p>
+            <blockquote>
+            <p>Nota per il docente: è possibile usare una mail
+            istituzionale (se l’istituto ne è provvisto) per generare
+            gli account personali degli studenti, dato che
+            successivamente è possibile cambiarla con una mail personale
+            per ogni studente per poter usare tale account anche in
+            futuro.</p>
+            </blockquote>
+            <p>Successivamente esplorare insieme agli studenti i
+            prodotti che verranno utilizzati durante il laboratorio:</p>
+            <ul>
+            <li><p>i <a
+            href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">Repository</a>:
+            creare un repository di prova e mostrare agli studenti la
+            presenza, l’importanza dei file README (mostrare come
+            scrivere dei bei documenti README con l’uso del Markdown o
+            lasciare questo argomento per una lezione successiva o come
+            approfondimento autonomo) e come inserire una breve
+            descrizione del repository in esso;</p></li>
+            <li><p>le <a
+            href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues">Issues</a>:
+            mostrare la creazione di una semplice issue come
+            segnalazione di un problema nel repository, richiesta di
+            chiarimento o suggerimento di una nuova funzionalità,
+            l’inserimento del titolo e di una descrizione significativa
+            per essa, l’uso della label per l’organizzazione dei vari
+            tipi di issue e la menzione degli altri membri del
+            team;</p></li>
+            <li><p>le <a
+            href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull
+            Requests</a> (abbr. pr): mostrare la creazione di una
+            semplice pull request come richiesta di integrazione nel
+            repository o in un determinato branch dei cambiamenti svolti
+            per migliorarlo, l’inserimento anche in essa di un titolo e
+            una descrizione significativa per essa, l’uso delle label
+            per l’organizzazione dei vari tipi di pull requests, la
+            menzione degli altri membri del team e il collegamento della
+            pr alla issue che risolve o che esemplifica.</p></li>
+            </ul>
+            <p>Il docente prima della lezione dovrà creare un repository
+            sul proprio account con il contenuto della cartella
+            <code>./github/phonebook</code> chiamato
+            <em>phonebook-classe-aa</em> in modo da poterlo cercare con
+            maggiore facilità, senza fargli generare file README o
+            .gitignore o LICENSE. Il repository in questo caso conterrà
+            già al suo interno sia il file <code>test.sh</code> che
+            tramite <code>expect</code> può aiutarci a verificare o meno
+            la correttezza funzionale del software sviluppato dagli
+            studenti che il file <code>.github/workflow/test.yml</code>
+            che eseguirà il suddetto script ad ogni pr verso il branch
+            <em>main</em> del repository (vedesi <a
+            href="https://it.wikipedia.org/wiki/Integrazione_continua">Continuous
+            Integration</a> e <a
+            href="https://github.com/features/actions">Github
+            Actions</a>). Se non ci si volesse avvalere di queste
+            funzionalità, basterebbe rimuovere i suddetti file dal
+            repository.</p>
+            <p>Successivamente, dividere gli studenti in gruppi di 3/4 e
+            sorteggiare uno di essi perché esegua un fork del repository
+            del professore. Il gruppo userà quindi tale repository per
+            svolgere l’esercitazione. Gli studenti potranno utilizzare
+            le issue sul repository principale per chiedere spiegazioni
+            al docente e per segnalare il completamento
+            dell’esercitazione.</p>
             <p>Le indicazioni sono le stesse del precedente esercizio.
             In questo caso l’esercizio è molto corposo, constringendo
             molti studenti a dover finire a casa, in altra sede o
             durante una lezione successiva. Lo sviluppo sullo stesso
             progetto da remoto è un fondamentale bisogno che viene
             soddisfatto e difficoltà che viene semplificata proprio
-            dallo strumento in questione, per questo potrebbe essere
+            dallo strumento in questione. Per questo potrebbe essere
             anche forzato il fatto di dover finire a casa l’esercizio
             per poter mettere alla prova gli alunni anche sotto questo
             aspetto.</p>
@@ -970,23 +1170,30 @@ print(&quot;The result is &quot; + str(result))       a8tnf</code></pre>
             <u>completamente</u> open source (eseguibile anche su una
             Raspberry Pi) è <a href="https://gitea.com/">Gitea</a>.
             Tuttavia a differenza dei primi due servizi, Gitea non
-            possiede un motore/servizio di CI integrato (come le Github
-            Actions o Gitlab CI), per questo deve essere usato un
+            possiede un motore/servizio di Continuous Integration
+            integrato come le Github Pages o <a
+            href="https://docs.gitlab.com/ee/ci/">Gitlab CI</a> (per
+            eseguire codice ad ogni evento sul repository, come ad
+            esempio eseguire dei controlli e la valutazione degli
+            esercizi degli studenti), per questo deve essere usato un
             servizio esterno.</p>
             <p>Dopo queste lezioni, gli studenti possono essere pronti
             ad ulteriori conseguenze degli argomenti trattati, come ad
             esempio:</p>
             <ul>
-            <li><p>pratiche DevOps</p></li>
+            <li><p>pratiche <a
+            href="https://it.wikipedia.org/wiki/DevOps">DevOps</a></p></li>
             <li><p>contribuzione a progetti Open Source</p></li>
             <li><p>esplorazione di ulteriori servizi che permettano
             hosting di repository (alcuni proposti sopra)</p></li>
-            <li><p>uso di Github Pages (o i concorrenti Gitlab Pages,
-            Gitea non possiede anche in questo caso un servizio
-            integrato, quindi bisognerebbe adottare una soluzione terza)
-            per la pubblicazione di siti web statici o applicazioni web
-            lato client (con l’uso di JQuery o i più modermi Vue, React
-            o Angular)</p></li>
+            <li><p>uso di <a href="https://pages.github.com/">Github
+            Pages</a> (o i concorrenti <a
+            href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab
+            Pages</a>, Gitea non possiede anche in questo caso un
+            servizio integrato, quindi bisognerebbe adottare una
+            soluzione terza) per la pubblicazione di siti web statici o
+            applicazioni web lato client (con l’uso di JQuery o i più
+            modermi Vue, React o Angular)</p></li>
             </ul>
             <h1 id="bibliografia">Bibliografia</h1>
             <!--
@@ -1024,13 +1231,7 @@ print(&quot;The result is &quot; + str(result))       a8tnf</code></pre>
             role="doc-biblioentry">
             <span>“Linee Guida Ministeriali.”</span> n.d. Accessed June
             7, 2022. <a
-            href="http://www.e-santoni.org/Linee_guida/secondo_ciclo/tecnici_linee_guida/linee_guida_triennio/SCHEDE_DISCIPLINARI_Ist_Tecnici/settore_tecnologico/C4_Informatica%20e%20Telecomunicazioni.pdf">http://www.e-santoni.org/Linee_guida/secondo_ciclo/tecnici_linee_guida/linee_guida_triennio/SCHEDE_DISCIPLINARI_Ist_Tecnici/settore_tecnologico/C4_Informatica%20e%20Telecomunicazioni.pdf</a>.
-            </div>
-            <div id="ref-necessity" class="csl-entry"
-            role="doc-biblioentry">
-            <span>“Sentire La Necessity Per Imparare a
-            Programmare.”</span> n.d. Accessed June 7, 2022. <a
-            href="https://docs.google.com/presentation/d/1tjFUfJzOOGkeQNdptizrudBbFXERYLDIyiLl5CRstgs/edit#slide=id.p1">https://docs.google.com/presentation/d/1tjFUfJzOOGkeQNdptizrudBbFXERYLDIyiLl5CRstgs/edit#slide=id.p1</a>.
+            href="https://www.gazzettaufficiale.it/eli/gu/2012/03/30/76/so/60/sg/pdf">https://www.gazzettaufficiale.it/eli/gu/2012/03/30/76/so/60/sg/pdf</a>.
             </div>
             </div>
             <h1 id="licenza-del-documento">Licenza del documento</h1>
@@ -1069,10 +1270,14 @@ print(&quot;The result is &quot; + str(result))       a8tnf</code></pre>
             immedesimano in programmatori su un unico progetto software,
             Strategie Didattiche (A. Calvani) pag. 10<a href="#fnref4"
             class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-            <li id="fn5" role="doc-endnote"><p>Prendendo spunto dalla
+            <li id="fn5" role="doc-endnote"><p><a
+            href="https://survey.stackoverflow.co/2022/#section-version-control-version-control-systems">Stackoverflow
+            Developer Survey</a>.<a href="#fnref5" class="footnote-back"
+            role="doc-backlink">↩︎</a></p></li>
+            <li id="fn6" role="doc-endnote"><p>Prendendo spunto dalla
             Pair Programming: gli alunni svolgono a coppie gli esercizi
             proposti per confrontarsi sulle strategie da adottare per
-            risolvere un particolare problema.<a href="#fnref5"
+            risolvere un particolare problema.<a href="#fnref6"
             class="footnote-back" role="doc-backlink">↩︎</a></p></li>
             </ol>
             </section>
