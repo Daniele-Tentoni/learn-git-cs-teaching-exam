@@ -24,6 +24,10 @@ Se questa relazione è stata già consegnata in precedenza, indicare qui
 * risposte a eventuali domande/commenti fatti dai docenti sulle versioni precedenti
 -->
 
+## Post esame 18/07
+
+- rimuove plurali inglesi in frasi italiane
+
 ## [Post esame 21/06](https://github.com/Daniele-Tentoni/learn-git-cs-teaching-exam/pull/4)
 
 - incluso riferimento a gioco oh-my-git
@@ -69,11 +73,11 @@ Una sua brevissima descrizione generale
 
 Ho scelto di realizzare questa attività per due principali motivi:
 
-1. La proporrei principalmente a studenti che hanno scelto il mio stesso percorso di studi alle scuole superiori, dove mi piacerebbe andare ad insegnare e dove penso che questa attività possa servire maggiormente, preparando gli studenti ad utilizzare uno dei più diffusi tools per il versionamento del codice;
+1. La proporrei principalmente a studenti che hanno scelto il mio stesso percorso di studi alle scuole superiori, dove mi piacerebbe andare ad insegnare e dove penso che questa attività possa servire maggiormente, preparando gli studenti ad utilizzare uno dei più diffusi tool per il versionamento del codice;
 
 2. Avendo già avuto esperienza lavorativa ho notato che gli studenti usciti da tali percorsi di studi non sono preparati abbastanza per entrare con tranquillità e rapidità dentro al mondo del lavoro. Molti non possiedono le competenze da me ritenute minime per poter lavorare in modo collaborativo neanche a piccoli progetti software interni alla mia realtà aziendale attuale.
 
-Per tali motivi, penso che proporre agli studenti quelle che secondo me sono le competenze minime da acquisire durante il proprio percorso scolastico in tema di Versioning Control Systems e sviluppo collaborativo alla scrittura del codice sia un esercizio utile in preparazione alle future lezioni a studenti delle scuole e neo assunti interni alla mia azienda.
+Per tali motivi, penso che proporre agli studenti quelle che secondo me sono le competenze minime da acquisire durante il proprio percorso scolastico in tema di Versioning Control System e sviluppo collaborativo alla scrittura del codice sia un esercizio utile in preparazione alle future lezioni a studenti delle scuole e neo assunti interni alla mia azienda.
 
 ## Innovatività
 
@@ -94,7 +98,7 @@ Alcune delle risorse disponibili online attualmente che permettono di apprendere
 - [https://ohmygit.org/](https://ohmygit.org/): Altro gioco gratuito e open source scaricabile per quasi tutte le piattaforme desktop per imparare i comandi, diversamente dal precedente non offre agli studenti proprio una console, offrendo una diversa gamification;
 
 - [https://www.atlassian.com/git](https://www.atlassian.com/git)
-  : Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket. Propone guide ed esercizi per imparare ad usare gli strumenti Git e Bitbucket, similmente a https://lab.github.com/ per Githubò
+  : Guida a Git curata da Atlassian, uno dei principali attori in gioco in tema di Sistemi di Versionamento del Codice grazie alla loro piattaforma BitBucket. Propone guide ed esercizi per imparare ad usare gli strumenti Git e Bitbucket, similmente a https://lab.github.com/ per Github
 
 - [https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
   : Elenco dei principali comandi di Git curata dai sopracitati collaboratori di Atlassian. [@github_learning_lab]
@@ -445,9 +449,9 @@ Non verranno approfondite in questo materiale d'esame, ma similmente possono ess
 
 - storia del repository (`log`): il foglio di metadati, scritto dal commit meno recente a quello più, è di fatto la storia del nostro repository. Navigarla (`checkout`) vuol dire tagliare/attaccare con lo scotch le striscie dal foglio dei metadati nel foglio del nostro programma come abbiamo fatto fino adesso fino al commit nella storia che si vuole navigare. Si introduce l'uso di un post-it per marcare il commit corrente (`HEAD`);
 
-- rami (`branches`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso (questo è un altro dato che contribuisce a calcolare l'hash del commit). Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository;
+- rami (`branch`): per creare un nuovo branch si scrive il suo nome su una etichetta e la si pone sul commit a cui punta la HEAD del branch. Nel foglio dei metadati ci si annota per ogni commit anche i genitori di esso (questo è un altro dato che contribuisce a calcolare l'hash del commit). Si può far ricostruire agli studenti su un altro foglio di carta l'albero del repository;
 
-- tags (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi;
+- tag (`tag`): creare un altro foglio di metadati dove ci si annotano i tag con i relativi commit e messaggi;
 
 - repository remoto (`push` e `pull`): esistono degli archivi dislocati in altri "uffici" diversi dal nostro, ma che possono ricevere le nostre modifiche e viceversa se le inviamo o le richiediamo con tali comandi. Simulare quindi l'invio dell'elenco di tutto l'albero delle modifiche del branch principale e dei riferimenti ai branch aperti quando si esegue una push e viceversa quando si esegue una pull;
 
@@ -475,9 +479,9 @@ Successivamente esplorare insieme agli studenti i prodotti che verranno utilizza
 
 * i [Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories): creare un repository di prova e mostrare agli studenti la presenza, l'importanza dei file README (mostrare come scrivere dei bei documenti README con l'uso del Markdown o lasciare questo argomento per una lezione successiva o come approfondimento autonomo) e come inserire una breve descrizione del repository in esso;
 
-* le [Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues): mostrare la creazione di una semplice issue come segnalazione di un problema nel repository, richiesta di chiarimento o suggerimento di una nuova funzionalità, l'inserimento del titolo e di una descrizione significativa per essa, l'uso della label per l'organizzazione dei vari tipi di issue e la menzione degli altri membri del team;
+* le [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues): mostrare la creazione di una semplice issue come segnalazione di un problema nel repository, richiesta di chiarimento o suggerimento di una nuova funzionalità, l'inserimento del titolo e di una descrizione significativa per essa, l'uso della label per l'organizzazione dei vari tipi di issue e la menzione degli altri membri del team;
 
-* le [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbr. pr): mostrare la creazione di una semplice pull request come richiesta di integrazione nel repository o in un determinato branch dei cambiamenti svolti per migliorarlo, l'inserimento anche in essa di un titolo e una descrizione significativa per essa, l'uso delle label per l'organizzazione dei vari tipi di pull requests, la menzione degli altri membri del team e il collegamento della pr alla issue che risolve o che esemplifica.
+* le [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbr. pr): mostrare la creazione di una semplice pull request come richiesta di integrazione nel repository o in un determinato branch dei cambiamenti svolti per migliorarlo, l'inserimento anche in essa di un titolo e una descrizione significativa per essa, l'uso delle label per l'organizzazione dei vari tipi di pull request, la menzione degli altri membri del team e il collegamento della pr alla issue che risolve o che esemplifica.
 
 Il docente prima della lezione dovrà creare un repository sul proprio account con il contenuto della cartella `./github/phonebook` chiamato *phonebook-classe-aa* in modo da poterlo cercare con maggiore facilità, senza fargli generare file README o .gitignore o LICENSE. Il repository in questo caso conterrà già al suo interno sia il file `test.sh` che tramite `expect` può aiutarci a verificare o meno la correttezza funzionale del software sviluppato dagli studenti che il file `.github/workflow/test.yml` che eseguirà il suddetto script ad ogni pr verso il branch *main* del repository (vedesi [Continuous Integration](https://it.wikipedia.org/wiki/Integrazione_continua) e [Github Actions](https://github.com/features/actions)). Se non ci si volesse avvalere di queste funzionalità, basterebbe rimuovere i suddetti file dal repository.
 
@@ -489,7 +493,7 @@ Le indicazioni sono le stesse del precedente esercizio. In questo caso l'eserciz
 
 Git e la maggior parte dei programmi, servizi, utility e altri prodotti informatici sopracitati vengono rilasciati con licenze aperte e libere.
 
-Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che _aprirlo_ potrebbe danneggiare il loro business). Un'altra alternativa maggiormente open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati _open core_) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di Continuous Integration integrato come le Github Pages o [Gitlab CI](https://docs.gitlab.com/ee/ci/) (per eseguire codice ad ogni evento sul repository, come ad esempio eseguire dei controlli e la valutazione degli esercizi degli studenti), per questo deve essere usato un servizio esterno.
+Si vuole fare notare in questa istanza che il codice di Github non è completamente Open Source, sebbene loro per primi siano forti promotori di pratiche di software libero (in una conferenza hanno dichiarato che _aprirlo_ potrebbe danneggiare il loro business). Un'altra alternativa maggiormente open source potrebbe essere [Gitlab](https://gitlab.com) (non completamente, si sono dichiarati _open core_) mentre l'alternativa <u>completamente</u> open source (eseguibile anche su una Raspberry Pi) è [Gitea](https://gitea.com/). Tuttavia a differenza dei primi due servizi, Gitea non possiede un motore/servizio di Continuous Integration integrato come Github Pages o [Gitlab CI](https://docs.gitlab.com/ee/ci/) (per eseguire codice ad ogni evento sul repository, come ad esempio eseguire dei controlli e la valutazione degli esercizi degli studenti), per questo deve essere usato un servizio esterno.
 
 Dopo queste lezioni, gli studenti possono essere pronti ad ulteriori conseguenze degli argomenti trattati, come ad esempio:
 
